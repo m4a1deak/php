@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="http://localhost/shopcz/index.php?p=admin&c=haha&a=show" method="post">
+    <p>
+        验证码
+        <input type="text" name="yzm" id="yzm">
+        <img src="http://localhost/shopcz/index.php?p=admin&c=haha&a=code" alt="">
+        <span id="aaa"></span>
+    </p>
+    <p><input type="submit" value="提交"></p>
+</form>
+</body>
+<script>
+    var yzm=document.getElementById('yzm');
+    var aaa=document.getElementById('aaa');
+    yzm.onblur=function(){
+        var url = "http://localhost/shopcz/index.php?p=admin&c=haha&a=show";
+        var data='yzm='+yzm.value;
+        console.log(yzm.value);
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+            if(this.readyState==4){
+                console.log(this.responseText)
+                //console.log(this.responseText);
+                if(this.responseText==1){
+                    aaa.innerHTML='对';
+                }else if(this.responseText==0){
+                    aaa.innerHTML='错';
+                }else{
+                    aaa.innerHTML='xx';
+                }
+
+            }
+        }
+        xhr.open('post',url,true);
+        xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+        xhr.send(data);
+    }
+</script>
+</html>

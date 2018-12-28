@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>考试中心 - 修改考题 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="application/views/admin/styles/general.css" rel="stylesheet" type="text/css" />
+<link href="application/views/admin/styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>
+<span class="action-span"><a href="index.php?p=admin&c=Model&a=index">考题列表</a></span>
+<span class="action-span1"><a href="index.php?act=main">考试 管理中心</a> </span><span id="search_id" class="action-span1"> - 修改考题 </span>
+<div style="clear:both"></div>
+</h1>
+<div class="main-div">
+  <form action="index.php?p=admin&c=Model&a=insert" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+	 <table width="100%" id="general-table">
+		<tbody>
+        <tr>
+            <td class="label">考题内容:</td>
+            <td>
+                <textarea style="resize:none" name="content" rows="3" cols="48"><?php echo $s['ti_content'];?></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">可选答案:</td>
+            <td>
+                <textarea style="resize:none" name="daan" rows="3" cols="48"><?php echo $s['ti_daan'];?>
+                </textarea><font color="red">请用逗号进行分隔</font>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">学科:</td>
+            <td>
+                <select name="xueke">
+                    <option value="1" <?php echo $s['ti_xueke']==1?"selected":" "; ?>>数学</option>
+                    <option value="2"  <?php echo $s['ti_xueke']==2?"selected":" "; ?>>语文</option>
+                    <option value="3"  <?php echo $s['ti_xueke']==3?"selected":" "; ?>>英语</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label">答案:</td>
+            <td>
+                <select name="zhendaan">
+                    <option value="1"  <?php echo $s['zhendaan']==1?"selected":" "; ?>>A</option>
+                    <option value="2" <?php echo $s['zhendaan']==2?"selected":" "; ?>>B</option>
+                    <option value="3" <?php echo $s['zhendaan']==3?"selected":" "; ?>>C</option>
+                    <option value="4" <?php echo $s['zhendaan']==4?"selected":" "; ?>>D</option>
+                </select>
+                <font color="red">*</font>
+            </td>
+        </tr>
+			<tr>
+				<td class="label">是否显示:</td>
+				<td><input type="radio" name="is_show" value="1" checked="true"> 是<input type="radio" name="is_show" value="0"> 否  </td>
+			</tr>
+
+      </tbody></table>
+      <div class="button-div">
+        <input type="submit" value=" 确定 ">
+        <input type="reset" value=" 重置 ">
+      </div>
+  
+  </form>
+</div>
+</div>
+
+</body>
+</html>

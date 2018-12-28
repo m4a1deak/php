@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    function t(){
+        alert(this.name);
+    }
+    window.name='hahah';
+    var Dog ={
+        name:'xiaotian',
+
+    }
+    //Dog.bakr();
+    var Cat ={
+        name:'加肥',
+    }
+    Dog.bark=t;
+    Dog.bark();
+    //不带           括号
+    Cat.intro = Dog.bark;
+    Cat.intro();
+
+    //运算结果是等号右边的值
+    (Dog.xx = Cat.intro)();
+    //这是一个值 不是变量指向
+
+</script>
+</html>

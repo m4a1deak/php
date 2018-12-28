@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理界面</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1><a href="{:U('admin/index/index')}"><span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span></a>&nbsp;栏目列表</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <li class="list-group-item active">栏目管理</li>
+                <a href="{:U('admin/cat/catlist')}" class="list-group-item text-center">栏目列表</a>
+                <a href="{:U('admin/cat/catadd')}" class="list-group-item text-center">增加栏目</a>
+            </div>
+            <div class="list-group">
+                <li href="#" class="list-group-item active">文章管理</li>
+                <a href="{:U('admin/articel/artlist')}" class="list-group-item text-center">文章列表</a>
+                <a href="{:U('admin/articel/artadd')}" class="list-group-item text-center">添加文章</a>
+            </div>
+            <div class="list-group">
+                <li href="#" class="list-group-item active">留言管理</li>
+                <a href="#" class="list-group-item text-center">留言列表</a>
+                <a href="#" class="list-group-item text-center">查看访客</a>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item active text-center">退出登录</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <table class="table table-hover table-bordered">
+            <tr class="active">
+                <td>栏目名称</td>
+                <td>创建时间</td>
+                <td>文章数</td>
+                <td>所属分类</td>
+                <td>操作</td>
+            </tr>
+           <foreach name="list" item="v">
+                <tr>
+                    <td>{$v['cat_name']}</td>
+                    <td>{$v['cat_time']|date="Y-m-d H:i:s",###}</td>
+                    <td>{$v['num']}</td>
+                    <td>{$v['fenlei']}</td>
+                    <td><a href="{:U('admin/cat/catupd',array('cat_id'=>$v['cat_id']))}" class="btn btn-info">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{:U('admin/cat/catdel',array('cat_id'=>$v['cat_id']))}" class="btn btn-danger">删除</a></td>
+                </tr>
+           </foreach>
+            </table>
+            <div class="row text-center">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">总计{$count}条记录</div>
+                <div class="col-md-2" style="font-size: 20px;">{$show}</div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="well text-center">
+            风中追风... &copy; 2017年
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>

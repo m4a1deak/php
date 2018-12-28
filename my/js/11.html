@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img id='deng' src="off.jpg" alt="" onclick="qie()">
+</body>
+<script>
+    function qie(){
+        //alert('s');
+        var deng = document.getElementById('deng');
+        if(deng.src.indexOf('on')>=0){
+            deng.src='off.jpg';
+        }else{
+            deng.src='on.jpg';
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="" method="post">
+    <p>用户名:<input type="text" name="username"><span id="reg"></span></p>
+    <p>邮箱:<input type="text" name="email"></p>
+    <p><input type="submit" value="提交"></p>
+</form>
+</body>
+<script>
+    document.getElementsByTagName('form')[0].onsubmit=function(){
+        var inps = document.getElementsByTagName('input');
+        var data = 'username='+inps[0].value+'&email='+inps[1].value;
+        //alert(data);
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange=function(){
+            if(this.readyState==4){
+                alert(this.responseText);
+            }
+        }
+        xhr.open('post','05.php',true);
+        //请求头
+        xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+        //这里没有写长度
+        //顺序不能掉
+        xhr.send(data);
+
+        return false;
+    }
+
+</script>
+</html>

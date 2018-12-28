@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul>
+    <li>导航1</li>
+    <li>导航2</li>
+    <li>导航3</li>
+    <li>导航4</li>
+    <li>导航5</li>
+    <li>导航6</li>
+    <li>导航7</li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //基础过滤器
+    //第一个li
+    $('li:first').css('background','red');
+    //最后一个
+    $('li:last').css('background','red');
+    //eq 从零计数
+    $('li:eq(2)').css('background','red');
+    //奇数行
+    $('li:odd').css('background','blue');
+    //偶数行
+    $('li:even').css('background','black');
+</script>
+</html>

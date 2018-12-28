@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>jQuery包结点</h1>
+<input type="button" value="用p标签包住每个input" onclick="wp()" />
+<input type="button" value="用p标签包住所有input" onclick="wpa()" />
+<input type="button" value="li中的文字加粗" onclick="cu()" />
+<input type="text" name="" id="" />
+<input type="text" name="" id="" />
+<input type="text" name="" id="" />
+<ul><li>春</li>
+    <li>夏</li>
+    <li>秋</li>
+    <li>冬</li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    function wp(){
+        //包住单个input
+        $('input:text').wrap('<p></p>');
+    }
+    //包住所有input
+    function wpa(){
+        $('input:text').wrapAll('<p></p>');
+    }
+    //在li里边加b标签
+    function cu(){
+        $('li').wrapInner('<b></b>');
+    }
+
+</script>
+</html>

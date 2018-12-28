@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+</head>
+<body>
+<form action="">
+    密码<input type="text">
+    <input type="submit" value="提交" >
+</form>
+
+</body>
+<script>
+    document.getElementsByTagName('form')[0].onsubmit=function(){
+        var ipt = document.getElementsByTagName('input')[0];
+        var patt1 = /^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[A-Z]).{6,8}$/
+        if(!patt1.test(ipt.value)){
+            alert('不对');
+            return false;
+        }
+
+
+
+
+
+
+    }
+
+</script>
+</html>

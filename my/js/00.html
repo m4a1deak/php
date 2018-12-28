@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #cont{
+            width: 400px;
+            height: 400px;
+            border: 1px solid green;
+            position: relative;
+            margin-top: 100px;
+            /*overflow:hidden;*/
+        }
+        #main{
+            width: 400px;
+            position:relative;
+            top:-100px;
+        }
+        .row{
+            height: 100px;
+        }
+        .row div{
+            width: 98px;
+            height: 98px;
+            border:1px solid blue;
+            float: left;
+        }
+        .black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<h1>别踩白块</h1>
+<h1 id="sc">0</h1>
+<div id="cont">
+    <div id="main">
+
+    </div>
+</div>
+
+</body>
+<script>
+    var clock =null;
+    var state = true;
+    var speed = 2;
+    var main = document.getElementById('main');
+    //获得属性
+    function getStyle(el,attr){
+        return el.currentStyle?el.currentStyle[attr]:getComputedStyle(el,null)[attr];
+    }
+    //造div
+    function cDiv(className){
+        var div = document.createElement('div');
+        if(className){
+            div.className = className;
+        }
+        return div;
+    }
+    //造一行 四个div
+    function cRow(){
+        //造一个0到3之间的随机数
+        var ind = Math.floor(Math.random()*4);
+        //造一个 行div
+        var row = cDiv('row');
+        for(var i=0;i<4;i++){
+            if(i == ind){
+                row.appendChild(cDiv('black'));
+            }else{
+                row.appendChild(cDiv());
+            }
+        }
+        // main.appendChild(row);
+        //吧row塞到main里 每次都在是第一个子节点
+        if(main.firstChild){
+            main.insertBefore(row,main.firstChild);
+        }else{
+            main.appendChild(row);
+        }
+    }
+    function move(){
+        //获得top值
+        var top = getStyle(main,'top');
+        //转换为整型
+        top = parseInt(top);
+        //每次加两像素
+        main.style.top=top+ speed + 'px';
+        //如果到底变为0时
+        if(top > 0){
+            //添加一行div在顶部
+            cRow();
+            //重新拉高top为100
+            main.style.top = '-100px';
+            if(main.lastChild.pass == undefined){
+                fail();
+            }
+        }
+        //长度大于5时删除最下边一个子节点
+        if(main.children.length>=5){
+            main.removeChild(main.lastChild);
+        }
+    }
+    function init(){
+        for(var i=0;i<4;i++){
+            cRow();
+        }
+        //点击判断
+        main.onclick=function(ev){
+            ev.target = ev.target||ev.srcElement;
+            if(state == false){
+                alert('重开一局吧');
+            }else if(ev.target.className == ''){
+                fail();
+            } else {
+                    ev.target.className = '';
+                    ev.target.parentNode.pass=true;
+                    var score = document.getElementById('sc');
+                    var sc =parseInt(score.innerHTML)+1;
+                    score.innerHTML = sc;
+                    if(sc%10 == 0){
+                        speed +=2;
+                    }
+                }
+            }
+
+        //定时器
+        clock = setInterval('move()',40);
+    }
+    function fail(){
+        clearInterval(clock);
+        state = false;
+        alert('输了');
+    }
+    init();
+</script>
+</html>

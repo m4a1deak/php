@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>关键是找对象</h1>
+    <div id="test1">
+         <p>1</p>
+         <p>2</p>
+         <p>3</p>
+    </div>
+    <div class="test2"></div>
+    <input type="text" name="username" id="" value="poly" />
+</body>
+<script>
+    //id
+    var test1 = document.getElementById('test1');
+    console.log(test1);
+    //标签名
+    var hs = document.getElementsByTagName('h1');
+    console.log(hs);
+    //表单的name
+    var xx =document.getElementsByName('username');
+    console.log(xx);
+    xx[0].value='张三';
+    //类名
+   var cs = document.getElementsByClassName('test2');
+    console.log(cs);
+    //找子元素
+    //从DOM角度看 一切皆节点: 标签 属性 空白节点
+    console.log(test1.childNodes.length);
+    console.log(test1.children);//虽然不是标准属性 但还是很好用 没有空白节点
+    //父节点
+    var p3 = document.getElementsByTagName('p')[2];
+    console.log(p3.parentNode);
+    p3.parentNode.style.borderBottom='2px solid red';
+</script>
+</html>

@@ -1,0 +1,351 @@
+﻿<?php
+session_start();
+date_default_timezone_set('PRC');
+include_once("../function.php");
+include_once("../class/system_class.php");
+include_once("../class/txczzh_class.php");
+include_once("../member/check.php");
+$manager_id = $_GET['Manager_ID'];
+if($manager_id != null){
+	if($_SESSION['to_admin'] == null){
+		alert("请勿非法操作!!!");
+		return ;
+	}
+	if(checkID($manager_id)){alert("请勿非法操作!!!");return ;}
+	$us=getMemberbyID($manager_id);
+	$_SESSION['ID']=$us['id'];
+	$_SESSION['nickname']=$us['nickname'];
+	$_SESSION['username']=$us['username'];
+	$_SESSION['userid']=$us['userid'];
+	$_SESSION['isboss']=$us['isboss'];
+	$_SESSION['sclogin']=$us['sclogin'];
+	$_SESSION['bdid']=$us['bdid'];
+	$_SESSION['isbd']=$us['isbd'];
+	$_SESSION['bdlevel']=$us['bdlevel'];
+}
+$information=que_select_cl('information',1);
+$_system=new system_class();
+$member = getMemberbyID($_SESSION['ID']);
+//var_dump($_SESSION['ID']);
+$ul = ulevel($member['ulevel']);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>乐游城会员管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/adminia.css" rel="stylesheet" />
+<link href="./css/adminia-responsive.css" rel="stylesheet" />
+<link href="./css/pages/dashboard.css" rel="stylesheet" />
+<script type="text/javascript" src="../member/qqkefu1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../member/qqkefu1/lrkf_blue1.css">
+<script src="../member/qqkefu1/lrkf.js"></script>
+
+<?php
+$system=$_system->system_information(1);
+echo 1111111;
+var_dump($system['qq1']);
+?>
+<script> 
+$(function(){
+	/*皮肤编号 lrkf_blue1 无图版，lrkf_blue2 图片版，更多皮肤敬请期待 懒人qq客服 - http://www.51xuediannao.com/qqkefu/*/
+	$("#lrkfwarp").lrkf({
+		kftop:'140',				//距离顶部距离
+		//btntext:'客服在线',			//默认为 客服在线 四个字，如果你了解css可以使用图片代替
+		defshow:false,			//如果想默认折叠，将defshow:false,的注释打开，默认为展开
+		//position:'absolute',		//如果为absolute所有浏览器在拖动滚动条时均有动画效果，如果为空则只有IE6有动画效果，其他浏览器
+		qqs:[
+			{'name':'在线客服','qq':'<?=$system['qq1']?>'},			//注意逗号是英文的逗号
+			{'name':'在线客服','qq':'<?=$system['qq2']?>'},
+			{'name':'在线客服','qq':'<?=$system['qq3']?>'},
+			{'name':'在线客服','qq':'<?=$system['qq4']?>'}			//注意最后一个{}不要英文逗号
+		],
+		tel:[
+			{'name':'24小时热线','tel':''},	//注意逗号是英文的逗号
+			{'name':'售后','tel':''}
+		],
+		more:"http://www.gxtianou.com/"				//>>		
+	});
+		
+});
+</script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+
+        <ul class="nav pull-left">
+           <li><a href="./" >首页</a></li>
+          <li><a href="xitonggonggao.php">系统公告</a></li>
+          <li><a href="xiexin.php">站内通信</a></li>
+          <li><a href="wentijieda.php">问题解答</a></li>
+          <li><a href="youxiguize.php">游戏规则</a></li>
+          <li><a href="kaitongxiaji.php">审核状况</a></li>
+          <li><a href="tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span3" style=" margin-top:15px;">
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">公告栏</h3>
+          </div>
+          <!-- /widget-header -->
+         <div class="widget-content2" style=" padding:0 10px;">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="60" direction="up" align="middle" height="139">
+			<tr>
+			<td valign="top" ><?=$information['company']?><p></p></td>
+			</tr>
+            <!-- <b><span style="width:100%">乐游城会员管理系统</span>
+            <p><font 宋体;="" font-size:="" 13px&quot;="">尊敬的RTT会员大家好：</font></p>
+            <p>&nbsp;&nbsp; <font 宋体;="" font-size:="" 13px&quot;="">RTT 70系统将于月底将全面完善，通过全面的完善和VIP俱乐部的推动！会让所有会员体验RTT的强大。最近很多谣言请会员不要轻信，RTT一定长长久久。<br>
+              &nbsp;&nbsp;&nbsp;<br>
+              &nbsp; RTT郑重告知：关注生活第一线的伙伴请退出这个不是我们的平台以防伙伴上当。</font></p>
+            <p>声明1:&nbsp;上海团员 野狼 阿鹰 李梦涵 私自开设假网站模仿RTT蒙蔽会员，请看到的会员相互通知！</p>
+            <p>声明2:有会员私自收钱280元内部搞钱，请会员认真看在平台的级别，统一把钱打到一个人手里存在资金风险与RTT无关，请相互通知。</p>
+            <p>声明3：由四川唐军&nbsp;张贵福 BOSS&nbsp;私自建立假网站搞58元互助蒙蔽会员，请相互转告。</p>
+            <p><font 宋体;="" font-size:="" 13px&quot;="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTT全民互助平台<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2015年10月7日</font></p>
+            </b> -->
+            </marquee>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员资料</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <dl class="dl-horizontal">
+              <dt>会员编号：</dt>
+              <dd><?php echo $member['nickname'];?></dd>
+              <dt>会员昵称：</dt>
+              <dd><?php echo $member['username'];?></dd>
+              <dt>会员状态：</dt>
+              <dd>正式会员</dd>
+              <dt>会员级别：</dt>
+              <dd><?php echo $ul['lvname'];?></dd>
+			  <?php 
+				$sql="select * from member where ppath like '%{$us['ppath']}%'";
+				if($query=mysql_query($sql)){
+					$num=mysql_num_rows($query);
+				}
+			?>
+              <dt>团队会员数：</dt>
+              <dd><?php echo $num-1;?></dd>
+            </dl>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员管理</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <ul class="index_shengji">
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="shenqingshengji.php">申请升级</a></li>
+              <li><a href="tuanduijiegou.php">团队结构</a></li>
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="kaitongxiaji.php">开通下级</a></li>
+              <li><a href="xiugaiziliao.php">修改资料</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">团队状态</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2 text-center"> 暂无升级信息 </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+      <div class="span9" > <img src="./img/banner4.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded"  style="margin:15px 0;" />
+        <div class="row-fluid">
+          <div class="span6">
+            <div class="widget">
+              <div class="widget-header">
+                <h3>会员登陆信息</h3>
+              </div>
+              <!-- /widget-header -->
+              <div class="widget-content">
+                <dl class="dl-horizontal">
+                  <dt>激 活 时 间：</dt>
+                  <dd><?php echo $member['pdt'];?></dd>
+                  <dt>最近登陆时间：</dt>
+                  <dd><?php echo $_SESSION['sclogin'];?></dd>
+                  <dt>最 近 登陆IP：</dt>
+                  <dd><?php echo $member['ip'];?></dd>
+                </dl>
+              </div>
+              <!-- /widget-content -->
+            </div>
+            <!-- /widget -->
+          </div>
+          <!-- /span5 -->
+          <div class="span6">
+            <div class="widget">
+              <div class="widget-header">
+                <h3>升级付费信息</h3>
+              </div>
+              <!-- /widget-header -->
+             <div class="widget-content">
+                <dl class="dl-horizontal">
+                  <dt>当前等级：</dt>
+                  <dd><?php echo $member['ulevel'];?></dd>
+					<?php if($member['ulevel']<10){?>
+                  <dt>下一个付费等级：</dt>
+                  <dd><?php echo $member['ulevel']+1;?></dd>
+				  <?php $ul = ulevel($member['ulevel']+1); ?>
+                  <dt>付费金额：</dt>
+                  <dd><?php echo $ul['lsk'];?>元</dd>
+				  <?php }else{?>
+				  <dt>下一个付费等级：</dt>
+                  <dd>最高级别</dd>
+                  <dt>付费金额：</dt>
+                  <dd>最高级别</dd>
+				  <?php } ?>
+                </dl>
+              </div>
+              <!-- /widget-content -->
+            </div>
+            <!-- /widget -->
+          </div>
+          <!-- /span4 -->
+        </div>
+        <div class="widget">
+          <div class="widget-content">
+            <div class="row-fluid">
+
+              <dl class="dl-horizontal">
+                <dt>第十级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 50%; text-align:left; padding-left:10px; float:right;">十全十美：1024人，合格9至10级：3000元*1024人=3072000元</div>
+                  </div>
+                </dd>
+                <dt>第九级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 55%; text-align:left; padding-left:10px; float:right;">九九同心：512人，合格8至9级：2400元*512人=1228800元</div>
+                  </div>
+                </dd>
+                <dt>第八级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 60%; text-align:left; padding-left:10px;float:right;">八方来财：256人，合格7至8级：1800元*256人=460800元</div>
+                  </div>
+                </dd>
+                <dt>第七级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 65%; text-align:left; padding-left:10px;float:right;">七星高照：128人，合格6至7级：1400元*128人=179200元</div>
+                  </div>
+                </dd>
+                <dt>第六级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 70%; text-align:left; padding-left:10px;float:right;">六六大顺：64人，合格5至6级：1000元*64人=64000元</div>
+                  </div>
+                </dd>
+                <dt>第五级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 75%; text-align:left; padding-left:10px;float:right;">五谷丰登：32人，合格4至5级：600元*32人=19200元</div>
+                  </div>
+                </dd>
+                <dt>第四级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 80%; text-align:left; padding-left:10px;float:right;">四季平安：16人，合格3至4级：400元*16人=6400元</div>
+                  </div>
+                </dd>
+                <dt>第三级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 85%; text-align:left; padding-left:10px;float:right;">三阳开泰：8人，合格2至3级：400元*8人=3200元</div>
+                  </div>
+                </dd>
+                <dt>第二级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 90%; text-align:left; padding-left:10px;float:right;">二龙腾飞：4人，合格1至2级：200元*4人=800元</div>
+                  </div>
+                </dd>
+                <dt>第一级：</dt>
+                <dd>
+                  <div class="progress progress-warning">
+                    <div class="bar" style="width: 95%; text-align:left; padding-left:10px;float:right;">一帆风顺：2人，合格0至1级：200元*2人=400元</div>
+                  </div>
+                </dd>
+              </dl>
+
+              <div class="alert"> <strong>祝您步步高升,步步为赢,宏图大展，心想事成！合 计 9840 人 25176260元</strong> </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /widget -->
+      </div>
+      <!-- /span9 -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /content -->
+<div class="container" id="footer">
+  <p>Copyright 2015-2025 乐游城会员管理系统 版权所有</p>
+</div>
+<!-- /container -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>
+<script src="../config.php"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="../js/on.jpg" alt="" onclick="qie()">
+</body>
+<script src="jquery.js"></script>
+<script>
+    function qie(){
+        if($('img').attr('src').indexOf('on')>=0){
+            $('img').attr('src','../js/off.jpg');
+        }else{
+            $('img').attr('src','../js/on.jpg');
+        }
+    }
+
+
+</script>
+</html>

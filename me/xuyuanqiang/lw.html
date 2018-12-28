@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>许愿墙</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>	
+		body{
+			background-image:url("img/bg.jpg");
+		}
+		nav li{
+			float: left;
+			margin-left:10px ;
+		}
+		nav li a,nav li a:hover{
+			color:rgb(255,102,0);
+			font:20px/30px '宋体','新宋',sans-serif;
+			text-decoration: none;
+		}
+		nav::after{
+			display: block;
+			height: 0;
+			clear: both;
+			content: " ";
+
+		}
+		table{
+			margin-top: 100px;
+			margin-left: 60px;
+			background-image: url('img/3.gif');
+			float: left;
+		}
+		.ftd{
+			font:17px/25.5px '宋体','新宋',sans-serif;
+			width: 70px;
+		}
+		#container{
+			width: 900px;
+			height: 600px;
+			border:1px solid red;
+			float: right;
+			margin-top: 15px;
+			margin-right: 70px;
+			position:absolute;
+			left :360px
+		}
+		.love{
+			width: 209px;
+			height: 181px;
+			
+		}
+		.addressee{
+			
+			margin-top: 10px;
+			margin-left: 10px;
+			font-size: 20px;
+
+		}
+		.content{
+			text-indent: 35px;
+			font-size: 14px;
+
+		}
+		.sender{
+			font-size: 17px;
+			margin-top: 17px;
+			margin-left: 120px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#" onclick="clii()">写纸条</a></li>
+		</ul>
+	</nav>
+	
+	<form action="" method="post">
+		<table border="1">
+			<tr>
+				<td class="ftd">收信人:</td>
+				<td>
+					<input type="text" name="addressee">
+				</td>
+
+			</tr>
+			<tr>
+				<td class="ftd">内容:</td>
+				<td>
+					<textarea name="content" id="" cols="25" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="ftd">发信人:</td>
+				<td>
+					<input type="text" name="sender">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="提交">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div id="container">
+	<?php foreach ($data as $k => $d) { ?>
+		<div class="love" id="a<?php echo $d['id']; ?>"
+		 <?php echo 'style="background-image:url(./img/', $d['pic'] ,');position:absolute;left:',$d['rleft'] ,'px;top:',$d['rtop'] ,'px;"' ?>  onclick="cli(<?php echo $d['id']; ?>)" >
+			<div class="addressee"> 
+			<?php echo $d['addressee']; ?>
+			</div>
+			<div class="content">
+				<?php echo $d['content']; ?>
+			</div>
+			<div class="sender">
+				<?php echo $d['sender']; ?>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+</body>
+<script>
+var num = 0;
+	function clii(){
+		var tab = document.getElementsByTagName('table')[0];
+		if(tab.style.display.indexOf('none') > -1){
+			tab.style.display = "block";
+		}else{
+			tab.style.display = "none";
+		}
+	}
+	function cli(test){
+		var div = document.getElementById('a'+test);
+		//alert(div);
+		num+=1;
+		div.style.zIndex=num;
+	}
+</script>
+</html>

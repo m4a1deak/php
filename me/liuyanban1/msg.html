@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		textarea{
+			resize:none;
+			outline-style: none;
+		}
+		input{
+			outline-style: none;
+		}
+		#main{
+			margin:20px auto;
+			width: 800px;
+			background: pink;
+		}
+		#text1{
+			width: 460px;
+			height: 50px;margin-top: 40px;
+		}
+		#text2{
+			width: 460px;
+			height: 50px;
+		}
+		#text3{
+			
+		}
+		p{
+			margin-left: 50px;
+			margin-top: 40px;
+
+		}
+		#submit{
+			height: 40px;
+			width: 60px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+
+		}
+		#sp{
+			position: relative;
+			left:40px;
+		}
+		span{
+			left:-40px;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<form action="" method="POST">
+			<p>姓名:<input type="text" name="name" id="text1" value="<?php echo $arr['name']; ?>"></p>
+			<p>邮箱:<input type="text" name="email" id="text2" value="<?php echo $arr['email']; ?>"></p>
+			<p id="sp"><span>留言:</span><textarea name="content" id="text3" cols="70" rows="13"><?php echo $arr['content']; ?></textarea></p>
+			<p><input type="submit" value="提交" id="submit"></p>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 150px;
+            border:1px solid red;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>你能点到我吗</h2>
+    <img src="mn.png" alt="">
+</div>
+
+</body>
+<script>
+    var div = document.getElementsByTagName('div')[0];
+    div.onclick=function(){
+        alert('厉害');
+    }
+    div.onmousemove=function(ev){
+        div.style.left=ev.pageX+ Math.random()*100 +'px';
+        div.style.top=ev.pageY+Math.random()*100 +'px';
+    }
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="看新闻">
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    /*//1 面向过程
+    $('input').click(function(){
+        $.get('26.php',function(res){
+            for(var i =0;i<res.length;i++){
+                $('li')[i].innerHTML=res[i];
+            }
+        },'json');
+    });*/
+
+
+    /*//2 shift() 移除数组中的第一个元素并返回该元素
+    $('input').click(function(){
+        $.get('26.php',function(res){
+            $('li').each(function(){
+                this.innerHTML=res.shift();
+            })
+        },'json');
+    });*/
+
+    //3 i++
+    //2 shift() 移除数组中的第一个元素并返回该元素
+    $('input').click(function(){
+        $.get('26.php',function(res){
+            var i =0;
+            $('li').each(function(){
+                this.innerHTML=res[i++];
+            })
+        },'json');
+    });
+</script>
+</html>

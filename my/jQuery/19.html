@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="绑定事件" onclick="jia();">
+<input type="button" value="解除绑定" onclick="jie();">
+<div style="width: 300px;height: 300px;background-color: red;"></div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    function c(){
+        alert('c');
+    }
+    function jia(){
+        $('div').bind('click',function(){
+            alert('a')
+        });
+        $('div').bind('click',function(){
+            alert('b')
+        });
+        $('div').bind('click',c);
+    }
+ function jie(){
+        $('div').unbind('click',c);
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #one{
+            width: 200px;
+            height: 200px;
+            border:1px solid red;
+        }
+        #two{
+            width: 100px;
+            height:100px;
+            border:1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<div id="one"></div>
+<div id="two" draggable="true"></div>
+</body>
+<script>
+    var one = document.getElementById('one');
+    var two = document.getElementById('two');
+
+    //拖拽区事件
+
+    two.ondragstart=function(){
+        //one.innerHTML='开始拖拽';
+    }
+    two.ondrag=function(){
+        //one.innerHTML+='开始移动';
+    }
+    two.ondragend=function(){
+        //one.innerHTML+='移动结束';
+    }
+
+    //投放区事件
+    //dragenter  dragover 可能会收到默认事件的影响,所以我们在这两个事件当中使用e.preventDefault();来阻止浏览器默认事件
+    one.ondragenter=function(e){
+        //one.innerHTML+='已经进入';
+        e.preventDefault();
+    }
+    one.ondragover=function(e){
+       // one.innerHTML+='1';
+        e.preventDefault();
+    }
+    one.ondragleave=function(){
+       // one.innerHTML+='离开';
+    }
+
+    one.ondrop=function(){
+        one.appendChild(two);
+    }
+</script>
+</html>

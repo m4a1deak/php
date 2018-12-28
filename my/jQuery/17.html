@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p><input type="text" name="f1" id="" value="Nihao"></p>
+<p><input type="text" name="f2" id="" value="Nihao"></p>
+<input type="button" value='js' name="js"><input type="button" value='jq' name="jq">
+</body>
+<script src="jquery.js"></script>
+<script>
+    //原生时间绑定
+    document.getElementsByName('f1')[0].onmousemove=function(){
+        this.value='';//清空值
+        this.focus();//获得焦点 原生触发
+    }
+    //jq
+    $('input[name=f2]').mousemove(function(){
+        $(this).val('');
+        //val()传参则设置对象的value,不传参则获取对象的value
+        //$(..).html() 如上
+        $(this).focus();  //jq触发
+    });
+
+    //绑定次数区别
+    document.getElementsByName('js')[0].onclick=function(){
+        alert('a');
+    }
+    document.getElementsByName('js')[0].onclick=function(){
+        alert('b');
+    }
+    document.getElementsByName('js')[0].onclick=function(){
+        alert('c');
+    }
+    //原生只会输出c
+    //是给onclick属性赋值,赋多个值,前面的被覆盖,只有最后一个函数被调用
+
+    $('input[name=jq]').click(function(){
+        alert('aa');
+    })
+    $('input[name=jq]').click(function(){
+        alert('bb');
+    })
+    $('input[name=jq]').click(function(){
+        alert('cc');
+    })
+    //都会挨个输出
+</script>
+</html>

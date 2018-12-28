@@ -1,0 +1,117 @@
+<?php 
+include("admin_check.php");
+include_once("../function.php");
+include_once("../class/bonus_class.php");
+include_once("../class/system_class.php");
+include_once("action.php");
+session_start();
+header("Content-Type: text/html;charset=utf-8");
+checkqx(3,26);
+// if ($_POST['button1']){
+// 	$m = $_POST['jine1'];
+	
+// 	$bonus_cl=new bonus_class();
+// 	if ($m>0){
+// 		$bonus_cl->fh1($m);
+// 		echo "<script language=javascript>alert('分红结算完成.');window.location.href='?'</script>";
+// 	}else {
+// 		echo "<script language=javascript>alert('分红金额有误，请从新填写.');window.location.href='?'</script>";
+// 	}
+// }
+if ($_POST['button2']){
+	$m = $_POST['jine2'];
+	$bonus_cl=new bonus_class();
+	if ($m>0){
+		$bonus_cl->fh($m);
+		$bonus_cl->b0bonus($m);
+		action::record("消费分红","1",$_SESSION['adminid'],"$m");
+		
+		echo "<script language=javascript>alert('分红结算完成.');window.location.href='?'</script>";
+	}else {
+		echo "<script language=javascript>alert('分红金额有误，请从新填写.');window.location.href='?'</script>";
+	}
+}
+// if ($_POST['button3']){
+// 	$m = $_POST['jine3'];
+// 	$bonus_cl=new bonus_class();
+// 	if ($m>0){
+// 		$bonus_cl->fh3($m);
+// 		echo "<script language=javascript>alert('分红结算完成.');window.location.href='?'</script>";
+// 	}else {
+// 		echo "<script language=javascript>alert('分红金额有误，请从新填写.');window.location.href='?'</script>";
+// 	}
+// }
+
+// if ($_POST['button4']){
+// 	edit_sql("update `member` set mey=0  where mey>0");
+// 	echo "<script language=javascript>alert('奖金清空完成.');window.location.href='?'</script>";
+// }
+// if ($_POST['button5']){
+// 	$_bonus_cl=new bonus_class();
+// 	$_bonus_cl->qdfh();
+// 	$_bonus_cl->b0bonus();
+// 	echo "<script language=javascript>alert('奖金日结算完成.');window.location.href='?'</script>";
+// }
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/table.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form action="?" method="post">
+
+<table width="100%" cellpadding="5" cellspacing="1" border="0" align="center" class="table1">
+<tr>
+<td align="center" colspan="10"><font style="color: #8A2BE2" size="6">消费分红</font></td>
+</tr>
+  <tr>
+    	<td align="center">会员级别</td>
+    	<td align="center" >分红资格</td>
+       <td align="center" >业绩</td>
+        <td align="center" >手动分红额</td>
+        <td align="center" >操作</td>
+  </tr>
+  <?php
+  		$us=getMemberbyID(1);
+//   		$row=getOne("select count(*),area4,area5 from member where zjulevel=4");
+ // 		$rs=getOne("select count(pai) from member where pai>0 and ispay>0");
+  		
+  		$sql="select id,pai from member where pai>0 and ispay>0 ";
+  		$arr=getall($sql);
+  		
+  		foreach ($arr as $key =>$rs){
+  			
+  				
+  			$znum=$znum+$rs['pai'];
+  		
+  		}
+// 		if($row['area4']>=$row['area5']){
+// 			$area=$row['area4'];
+// 		}else{
+// 			$area=$row['area5'];
+// 		}
+  ?>
+  	
+	 <tr>
+	  	<td align="center" >会员</td>
+	  <td align="center" ><?php echo $znum;?></td>
+	  <td align="center" ><?php echo $us['jijin'];?></td>
+	 <td align="center"  ><input type="text" name="jine2" value="" size="30"/></td>
+	 <td align="center"   ><input type="submit" class="button" id="button" name="button2" value="分红结算" style="width:100px" /></td>
+	 </tr>
+
+	
+  
+
+
+
+  </table>
+</form>
+</body>
+</html>

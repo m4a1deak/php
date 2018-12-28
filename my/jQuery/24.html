@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" name="name" id=""><span></span><br/>
+<input type="text" name="" id="">
+</body>
+<script src="jquery.js"></script>
+<script>
+    $('input[name=name]').blur(function(){
+        $.get('24.php?un='+$(this).val(),function(res){
+            if(res == 1){
+                $('span').html('<font style="color:red">不可用</font>');
+            }else{
+                $('span').html('<font style="color:green">可用</font>');
+            }
+        })
+    });
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="点击">
+<ul>
+    <li>春</li>
+    <li>夏</li>
+    <li>秋</li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    $('input').bind('click',function(){
+        $('ul').append('<li>冬</li>')
+    })
+    $('ul').on('click','li',function(){
+       //alert(this.innerHTML);
+        alert($(this).html());
+
+    });
+</script>
+</html>

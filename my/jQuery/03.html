@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>
+    <input type="text">
+    <span>1</span>
+    <span>2</span>
+</p>
+<p>
+    <input type="text">
+    <span>3</span>
+    <span>4</span>
+</p>
+<p>
+    <input type="text">
+    <span>5</span>
+    <span>6</span>
+</p>
+<div>
+    <span>7</span>
+</div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //层次选择器
+    //选择div下的span
+    $('div span').css('background','green');
+    //input的兄弟span
+   // $('input ~ span').css('background','red');
+    //input后的第一个span
+    $('input+span').css('background','red');
+</script>
+</html>

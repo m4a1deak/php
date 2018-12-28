@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="dj()">点击</button>
+<input type="button" value="一起分享" onclick="dj();" />
+<p>好人</p>
+<p style="display:none">坏人</p>
+</body>
+<script src="jquery.js"></script>
+<script>
+function dj(){
+    alert('a');
+    $('p:hidden').css('display','block');
+}
+</script>
+
+</html>

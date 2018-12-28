@@ -1,0 +1,1821 @@
+[ 2017-04-17T21:30:21+08:00 ] ::1 /shop/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT `goods_id`,`goods_name`,`market_price`,`goods_img`,`is_hot`,`shop_price` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 0,4   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000887s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 82 行.
+NOTIC: [8] Undefined variable: his D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 125 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 195 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 195 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 195 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shop\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002237s ]
+
+[ 2017-04-17T21:30:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2017-04-17T21:30:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-04-17T21:30:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-04-17T21:30:37+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0020s ]
+SQL: SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=3 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2017-04-17T21:30:38+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/themes/68ecshop_hechafree/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-04-17T21:30:38+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0018s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2017-04-17T21:30:40+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2017-04-17T21:30:40+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000630s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2017-04-17T21:30:40+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006912s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007066s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012828s ]
+
+[ 2017-04-17T21:31:29+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000590s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000701s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036362s ]
+
+[ 2017-04-17T21:31:29+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000991s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001105s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009485s ]
+
+[ 2017-04-17T21:31:29+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000503s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-04-17T21:31:31+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-04-17T21:31:31+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/themes/68ecshop_hechafree/images/sdgg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-04-17T21:31:31+08:00 ] ::1 /shop/index.php/Home/cat/cat/cat_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=api ) 
+ERR: 1054:Unknown column 'api' in 'where clause'
+ [ SQL语句 ] : SELECT `goods_sn`,`cat_id`,`brand_id`,`goods_name`,`shop_price`,`market_price`,`goods_number`,`click_count`,`goods_weight`,`goods_brief`,`goods_desc`,`thumb_img`,`goods_img`,`ori_img`,`is_on_sale`,`is_delete`,`is_best`,`is_new`,`is_hot`,`add_time`,`last_update` FROM `goods` WHERE ( cat_id=api ) 
+
+[ 2017-04-17T21:31:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000337s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2017-04-17T21:31:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000705s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000875s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2017-04-17T21:31:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-04-17T21:34:33+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-04-17T21:34:33+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2017-04-17T21:34:33+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2017-04-17T21:34:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000579s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2017-04-17T21:34:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000511s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2017-04-17T21:34:34+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000855s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000522s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002368s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000539s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000739s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000881s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2017-04-17T21:35:39+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-04-17T21:36:13+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000502s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-04-17T21:36:14+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2017-04-17T21:36:14+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-04-17T21:36:17+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2017-04-17T21:36:46+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000505s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-04-17T21:36:46+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000651s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-04-17T21:36:46+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001626s ]
+
+[ 2017-04-17T21:36:47+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-04-17T21:36:47+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2017-04-17T21:36:47+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001605s ]
+
+[ 2017-04-17T21:37:27+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000545s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003213s ]
+
+[ 2017-04-17T21:37:27+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002206s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000619s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-04-17T21:37:27+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005011s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000511s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-04-17T21:38:00+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001620s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001731s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001708s ]
+
+[ 2017-04-17T21:38:00+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000532s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001563s ]
+
+[ 2017-04-17T21:38:00+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000639s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001736s ]
+
+[ 2017-04-17T21:38:01+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-04-17T21:38:01+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-04-17T21:38:01+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-04-17T21:38:42+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015430s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2017-04-17T21:38:42+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000495s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002745s ]
+
+[ 2017-04-17T21:38:42+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000540s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2017-04-17T21:39:01+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012138s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000485s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-04-17T21:39:02+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-04-17T21:39:02+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2017-04-17T21:39:35+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000494s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002346s ]
+
+[ 2017-04-17T21:39:36+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000841s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006275s ]
+
+[ 2017-04-17T21:39:36+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000505s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-04-17T21:39:37+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-04-17T21:39:37+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000483s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2017-04-17T21:39:37+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000580s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2017-04-17T21:39:41+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-04-17T21:39:41+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000528s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-04-17T21:39:41+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2017-04-17T21:40:04+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000578s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2017-04-17T21:40:04+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001791s ]
+
+[ 2017-04-17T21:40:12+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000535s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2017-04-17T21:40:13+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000547s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2017-04-17T21:41:18+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 27 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000566s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2017-04-17T21:41:18+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000480s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002760s ]
+
+[ 2017-04-17T21:42:00+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000503s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000600s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-04-17T21:42:00+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000494s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-04-17T21:44:05+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000554s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2017-04-17T21:44:05+08:00 ] ::1 /shop/index.php/Home/goods/goods/goods_id/api/cron.php-t=1452023217
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+NOTIC: D方法实例化没找到模型类admin\Model\GoodsModel
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000482s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: mbx D:\AppServ\www\shop\Runtime\Cache\Home\4b285c522b6ad877f6a5a13ff3f9c885.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+

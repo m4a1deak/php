@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<select name="pro" id="pro" onchange="bian()">
+    <option value="">请选择</option>
+    <option value="1">北京</option>
+    <option value="2">山东</option>
+</select>
+<select name="city" id="city" onchange="bian2()"></select>
+<select name="xxx" id="xxx"></select>
+</body>
+<script>
+    function bian(){
+        var map = ['',['','朝阳','中关村'],['','潍坊','济宁']];
+        var pro = document.getElementById('pro');
+        var city = document.getElementById('city');
+        //alert(map[pro.value]);
+        var citys = map[pro.value]
+        for(var i = 1,len = citys.length,str='';i<len;i++){
+            str = str+ "<option value='"+i+"'>" + citys[i]+'</option>';
+        }
+        city.innerHTML=str;
+    }
+    function bian2(){
+        var map1 = ['',['天安门','博物馆'],['淘宝','京东']];
+        var map2 = ['',['','潍城','奎文'],['','曲阜','兖州']];
+        var xxx = document.getElementById('xxx');
+        var city = document.getElementById('city');
+        alert(map1[city.value]);
+    }
+</script>
+</html>

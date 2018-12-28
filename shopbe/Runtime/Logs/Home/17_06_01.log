@@ -1,0 +1,145 @@
+[ 2017-06-01T12:13:07+08:00 ] ::1 /shopbe/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0030s ]
+SQL: SELECT `goods_id`,`goods_name`,`market_price`,`goods_img`,`is_hot`,`shop_price` FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 0,4   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant parent_id - assumed 'parent_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 88 行.
+NOTIC: [8] Undefined variable: his D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 131 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 201 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 201 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 201 行.
+NOTIC: [8] Use of undefined constant goods_img - assumed 'goods_img' D:\AppServ\www\shopbe\Runtime\Cache\Home\2f412aae274b751dca883838bf7e7502.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+

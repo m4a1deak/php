@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>倒计时</h1>
+    <input type="text" name="time" value="5">
+    <br>
+    <img src="bom.jpg" alt="">
+</body>
+<script>
+    function bao(){
+        var inp = document.getElementsByName('time')[0];
+        var img = document.getElementsByTagName('img')[0];
+        var val = parseInt(inp.value) - 1;
+        inp.value = val;
+        if(val == 0){
+            img.src='warn.jpg';
+            //函数内找不到调到外层找
+            clearInterval(clock);
+        }
+    }
+    var clock = setInterval('bao()',1000);
+</script>
+</html>

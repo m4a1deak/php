@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    alert(name);
+    //构造函数
+    function Dog(){
+        this.name='xiaotian';
+        this.leg=4;
+        this.bark=function(){
+            alert('旺旺');
+        }
+    }
+    //含住创造一个空对象
+    //this 执行 该空对象
+    //执行语句 {}.name='xiaotian'
+    //返回该对象
+    //var dog = new Dog();
+    //console.log(dog);
+    //不要直接运行构造函数 否则会污染全局
+    //直接运行 this为空指向null 会理解为window
+    //最终window.name='xiaotian'
+    Dog();
+    //最新js标准是报错
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>Email:<input type="text" name="email" /></p>
+<p>密码:<input type="text" name="password" /></p>
+<p>重复密码:<input type="text" name="repassword" /></p>
+<p>学号:<input type="text" name="stunum" /></p>
+<p>学分:<input type="text" name="stuscore" /></p>
+<p><input type="password" name="" id=""></p>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //name选择器
+    $('input[name=email]').css('background','red');
+    //类型
+    $('input[type=password]').css('background','red');
+    //stu开头的
+    $('input[name^=stu]').css('background','blue');
+    //word结尾的
+    $('input[name$=word]').css('background','black');
+    //含有s的
+    $('input[name*=s]').css('background','pink');
+
+</script>
+</html>

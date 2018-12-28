@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<style>
+		blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}h1,h2,h3,h4,h5,h6{font-size:100%}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}small{font-size:12px}ol,ul{list-style:none}a{text-decoration:none}sup{vertical-align:text-top}sub{vertical-align:text-bottom}legend{color:#000}fieldset,img{border:0;display: block;}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}
+		body{
+			background-color: #EFEFEF;
+		}
+		header{
+			background: #fff;
+			height: 156px;
+			padding: 40px 0;
+			box-sizing:border-box;
+		}
+		header h1,header h4{
+			width: 1100px;
+			margin: 0 auto;
+		}
+		header h1{
+			font:45px/56px '微软雅黑';
+		}
+		header h4{
+			font:19px/20px '微软雅黑';
+		}
+		nav{
+			background-color: #222;
+		}
+		nav ul{
+			margin: 0 auto;
+			width: 1100px;
+			height: 60px;
+		}
+		nav li{
+			float: left;
+		}
+		nav a{
+			display: block;
+			padding: 0 20px;
+			line-height: 60px;
+			color:white;
+			font-size: 15px;
+		}
+		nav a:hover{
+			background-color: red;
+		}
+		#main{
+			margin:0 auto;
+			width:1100px;
+			
+			
+			
+		}
+		#lside{
+			width:805px;
+			
+			
+			float: left;
+		}
+		#rside{
+			width: 275px;
+			
+			
+			float: right;
+		}
+		aside{
+			background-color: #fff;
+			padding:40px;
+			margin-bottom: 20px;
+		}
+		aside h4{
+			font: 20px/24px "微软雅黑";
+			color:#000;
+			margin-bottom: 20px;
+		}
+		aside a,aside a:visited{
+			color:#1e73be;
+			font:14px/26px "微软雅黑";
+		}
+		aside a:hover{
+			color: #000;
+			font:14px/26px "微软雅黑";
+		}
+		aside input{
+
+			border:1px solid #accccc;
+			background: #fafafa;
+			padding:10px 15px;
+			font-size: 16px;
+			color:#666;
+			box-sizing:border-box;
+			width: 100%;
+		}
+		footer{
+			height: 65px;
+			background-color: green;
+
+		}
+		article{
+			background: #FFF;
+			margin-bottom: 20px;
+			padding:40px;
+		}
+		article h2{
+			font:30px/36px '微软雅黑';
+			
+		}
+		article a,article a:visited{
+			color:#1e73be;
+		}
+		article a:hover{
+			color:#000;
+		}
+		.entry_header,.entry_header a {
+			color: #666;
+			font-size12px;
+		}
+		.entry_header a:hover{
+			color:#1e73be;
+		}
+		.entry_content{
+			margin-top: 30px;
+			color:#a3a3a3;
+			font:15px/22px '微软雅黑'; 
+		}
+		#pagebar{
+			color: #3a3a3a;
+			font:17px/22px '微软雅黑';
+		}
+		#pagebar a,#pagebar a:visited{
+			color:#1e73be;
+		}
+		#pagebar a:hover{
+			color:block;
+		}
+		aside:first-child,article:first-child{
+			margin-top: 20px;
+		}
+		#main::after{
+			content: '';
+			display: block;
+			clear: both;
+			height: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>十八哥的Blog</h1>
+		<h4>乘风行，无惧</h4>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">导航1</a></li>
+			<li><a href="#">导航2</a></li>
+			<li><a href="#">导航3</a></li>
+			<li><a href="#">导航4</a></li>
+		</ul>
+	</nav>
+
+	<div id="main">
+		<div id="lside">
+			<article>
+				<h2><a href="#">午后的街头</a></h2>
+				<div class="entry_header">
+					<time>2015年7月7日</time>
+					by
+					<a href="#">十八</a>
+					<a href="#">闲谈随笔</a>
+					<a href="#">八条评论</a>
+				</div>
+				<div class="entry_content">
+					<p>有时候突然想说我爱你，<br>有时突然慌张忧伤。</p>
+					<p>像迷路的孩子，<br>东张西望。</p>
+					<p>伸出双手想抓住，<br>时光像泥鳅一样。</p>
+				</div>
+			</article>
+			<article>
+				<h2><a href="#">午后的街头</a></h2>
+				<div class="entry_header">
+					<time>2015年7月7日</time>
+					by
+					<a href="#">十八</a>
+					<a href="#">闲谈随笔</a>
+					<a href="#">八条评论</a>
+				</div>
+				<div class="entry_content">
+					<p>有时候突然想说我爱你，<br>有时突然慌张忧伤。</p>
+					<p>像迷路的孩子，<br>东张西望。</p>
+					<p>伸出双手想抓住，<br>时光像泥鳅一样。</p>
+				</div>
+			</article>
+			<article>
+				<h2><a href="#">午后的街头</a></h2>
+				<div class="entry_header">
+					<time>2015年7月7日</time>
+					by
+					<a href="#">十八</a>
+					<a href="#">闲谈随笔</a>
+					<a href="#">八条评论</a>
+				</div>
+				<div class="entry_content">
+					<p>有时候突然想说我爱你，<br>有时突然慌张忧伤。</p>
+					<p>像迷路的孩子，<br>东张西望。</p>
+					<p>伸出双手想抓住，<br>时光像泥鳅一样。</p>
+				</div>
+			</article>
+			<div id="pagebar">
+			pages:&nbsp
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				4
+				<a href="#">5</a>
+				<a href="#">6</a>
+			</div>
+		</div>
+		<div id="rside">
+		    <aside>
+		    	<form action="">
+		    		<input type="text" name="search">
+		    	</form>
+		    </aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="">文章标题1</a></li>
+					<li><a href="">文章标题2</a></li>
+					<li><a href="">文章标题3</a></li>
+					<li><a href="">文章标题4</a></li>
+				</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="">文章标题1</a></li>
+					<li><a href="">文章标题2</a></li>
+					<li><a href="">文章标题3</a></li>
+					<li><a href="">文章标题4</a></li>
+				</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="">文章标题1</a></li>
+					<li><a href="">文章标题2</a></li>
+					<li><a href="">文章标题3</a></li>
+					<li><a href="">文章标题4</a></li>
+				</ul>
+			</aside>
+		</div>
+		
+	</div>
+	<footer>daoiasdasdddddddddddddddddddddddd</footer>
+</body>
+</html>

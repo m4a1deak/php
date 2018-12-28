@@ -1,0 +1,313 @@
+<?php
+include("../member/check.php");
+include_once("../function.php");
+$information=que_select_cl('information',1);
+session_start();
+
+#搜索会员
+if ($_POST['Search']){
+	$SearchContent=$_POST['SearchContent'];
+	$TimeStart=$_POST['TimeStart'];
+	$TimeEnd=$_POST['TimeEnd'];
+	$SearchType=$_POST['SearchType'];
+	if ($TimeStart!=NULL){
+		if ($TimeEnd==NULL){
+			$TimeEnd=now();	
+		}
+		$_SESSION['SearchTime']="and fdate>='".$TimeStart."' and fdate<='".$TimeEnd."'";	
+	}else{
+		$_SESSION['SearchTime']=NULL;		
+	}
+	if ($SearchContent!=NULL){
+		if ($SearchType==1){
+			#搜索会员编号
+			$_SESSION['Search']="and nickname='".$SearchContent."'";
+		}
+	}else{
+		$_SESSION['Search']=NULL;
+	}
+}else{
+	if ($_GET['page']==NULL){
+		$_SESSION['Search']=NULL;	
+		$_SESSION['SearchTime']=NULL;
+	}
+}
+
+#删除记录
+if ($_POST['button4']){
+$cheuid_arr = $_POST['UID'];
+	foreach ((array)$cheuid_arr as $id)
+	{
+		$mail['issdelete']=1;
+    	edit_update_cl('mail',$mail,$id);
+	}
+	echo "<script language=javascript>alert('删除完成.');window.location.href='?'</script>";
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>乐游城会员管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/adminia.css" rel="stylesheet" />
+<link href="./css/adminia-responsive.css" rel="stylesheet" />
+<link href="./css/pages/dashboard.css" rel="stylesheet" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script src="./js/Apple_Js.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+        <ul class="nav pull-left">
+            <li><a href="./" >首页</a></li>
+          <li><a href="xitonggonggao.php">系统公告</a></li>
+          <li><a href="xiexin.php">站内通信</a></li>
+          <li><a href="wentijieda.php">问题解答</a></li>
+          <li><a href="youxiguize.php">游戏规则</a></li>
+          <li><a href="kaitongxiaji.php">审核状况</a></li>
+          <li><a href="tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span3" style=" margin-top:15px;">
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">公告栏</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2" style=" padding:0 10px;">
+            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1" scrolldelay="60" direction="up" align="middle" height="139">
+            <tr>
+			<td valign="top" ><?=$information['company']?><p></p></td>
+			</tr>
+            </marquee>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员资料</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <dl class="dl-horizontal">
+              <dt>会员编号：</dt>
+              <dd><?php echo $member['nickname'];?></dd>
+              <dt>会员昵称：</dt>
+              <dd><?php echo $member['username'];?></dd>
+              <dt>会员状态：</dt>
+              <dd>正式会员</dd>
+              <dt>会员级别：</dt>
+              <dd><?php echo $ul['lvname'];?></dd>
+			  <?php 
+				$sql="select * from member where ppath like '%{$member['ppath']}%'";
+				if($query=mysql_query($sql)){
+					$num=mysql_num_rows($query);
+				}
+			?>
+              <dt>团队会员数：</dt>
+              <dd><?php echo $num-1;?></dd>
+            </dl>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员管理</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <ul class="index_shengji">
+               <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="shenqingshengji.php">申请升级</a></li>
+              <li><a href="tuanduijiegou.php">团队结构</a></li>
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="kaitongxiaji.php">开通下级</a></li>
+              <li><a href="xiugaiziliao.php">修改资料</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">团队状态</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2 text-center"> 暂无升级信息 </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+      <div class="span9" >
+	  
+	  <div class="widget">
+                    
+
+           <div class="page-header">
+            <h1>收件箱</h1>
+          </div>
+
+                   <div class="datatable-header">
+
+  <div class="dataTables_filter  no-append">
+  
+  <div class="btn-group">
+  <!-- <input type="submit" name="Submit" value="删除邮件" class="btn"> -->
+ <input class="btn" type="button" onClick="Apple_url_a1()"  name="Submit" value="写 信">
+  <input class="btn" type="button" onClick="Apple_url_a2()" name="Submit" value="收件箱">
+  <input class="btn" type="button" onClick="Apple_url_a3()" name="Submit" value="发件箱">
+
+</div>
+
+
+
+  </div>
+
+                                    
+                                    
+
+</div>      
+
+<div class="table-overflow">            
+                          <form name="form1" method="post" action="?">
+<table width="100%" cellpadding="3" cellspacing="1" border="0" align="center" class="table1">
+      <tr>
+        <td height="4" colspan="6" align="left">
+          <select name="SearchType" id="SearchType">
+            <option value="1">发件会员</option>
+          </select>
+          <input type="text" name="SearchContent" id="SearchContent">
+        <input type="submit" name="Search" id="Search" class="button_blue" value="搜  索">        <!--<input type="button" name="dayin" id="dayin" class="btn1" value="导出表格" onClick="exportExcel('daochu')">--></td>
+      </tr>
+      <tr>
+        <td height="5" colspan="6" align="left">搜索时间范围：
+          <input type="text" name="TimeStart" id="TimeStart" style="width:100px" onFocus="HS_setDate(this)">
+          至
+          <input type="text" name="TimeEnd" id="TimeEnd" style="width:100px" onFocus="HS_setDate(this)"></td>
+      </tr>
+      <div id="daochu">
+      <tr>
+        <td height="10" colspan="6" align="center"> 收 件 箱</td>
+      </tr>
+      <tr>
+      	<td height="21" align="center"><input type="checkbox" name="checkbox" value="checkbox" onClick="javascript:SelectAll()"></td>
+        <td align="center">发件会员</td>
+        <td align="center">标题</td>
+        <td align="center">发件时间</td>
+        <td align="center">是否阅读</td>
+        <td align="center">查看内容</td>
+        </tr>
+      <?php
+	  	$pagesize = 10; //设置每页记录数 
+	  	$sql = "SELECT * FROM `mail` WHERE sid=".$_SESSION['ID']." and issdelete=0 ".$_SESSION['Search']." ".$_SESSION['SearchTime']."";
+		if($query = mysql_query($sql)){
+	  		$sum = mysql_num_rows($query); //计算总记录数 
+		}else{
+			$sum=0;	
+		} 
+		if($sum % $pagesize == 0) //计算总页数 
+			$total = (int)($sum/$pagesize); 
+		else 
+			$total = (int)($sum/$pagesize) + 1; 
+			if (isset($_GET['page'])) //获得页码
+			{ 
+				$p = (int)$_GET['page'];
+			} 
+			else 
+			{ 
+				$p = 1;
+			}
+			if ($p>$total){
+				$p=$total;	
+			}
+		$start = $pagesize * ($p - 1); //计算起始记录 
+      	$sql = "SELECT * FROM `mail` WHERE sid=".$_SESSION['ID']." and issdelete=0 ".$_SESSION['Search']." ".$_SESSION['SearchTime']." order by fdate desc limit ".$start.",".$pagesize;
+		if($query = mysql_query($sql)){
+		while ($row=mysql_fetch_array($query)){
+	  ?>
+      <tr>
+      	<td height="21" align="center"><input type="checkbox" name="UID[]" id="UID" value="<?=$row['id']?>"></td>
+        <td align="center"><?=$row['nickname']?></td>
+        <td align="center"><?=$row['title']?></td>
+        <td align="center"><?=$row['fdate']?></td>
+        <td align="center"><?php if ($row['isread']==0){?><font color="#FF0000">未读</font><?php }elseif($row['isread']==1){?>已读<?php }?></td>
+        <td align="center"><input name="" type="button" class="button_green" value="查  看" onClick="window.location.href='mailcontent.php?mid=<?=$row['id']?>&hf=1'"></td>
+      </tr>
+      <?php
+			}
+		}
+	  ?>
+      </div>
+    </table>
+    <table width="100%" border="0" class="ziti">
+          <tr>
+            <td align="left"><input name="button4" type="submit" class="button_red" id="button4" value="删除邮件" onClick="{if(confirm('您确定要删除该邮件吗?')){this.document.selform.submit();return true;}return false;}"></td>
+            <td align="right"><?php echo fenye($p,$pagesize,$sum,$total,$cx)?></td>
+          </tr>
+        </table>
+</form>
+                        
+                        </div>
+                        
+                        
+                        
+                    
+                        
+
+                    
+                    
+                </div>	  
+
+      </div>
+      <!-- /span9 -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /content -->
+<div class="container" id="footer">
+  <p>Copyright 2015-2025 乐游城会员管理系统 版权所有</p>
+</div>
+<!-- /container -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>
+</body>
+</html>

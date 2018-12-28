@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="反选" onclick="t3();">
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+<p><input type="checkbox" name="" id=""></p>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //面向过程的思路
+    function t1(){
+        var x = $('input:checkbox');
+        for(var i =0;i< x.length;i++){
+            if($(x[i]).prop('checked')){
+                $(x[i]).prop('checked',false);
+            }else{
+                $(x[i]).prop('checked',true)
+            }
+        }
+    }
+    //面向函数式思路 回调函数
+    //回调函数中   this
+    //循环过程中 循环到哪个DOM对象  回调函数的this就是谁
+    function t2(){
+        $('input:checkbox').each(function(){
+            //console.log(this);
+            if($(this).prop('checked')){
+                $(this).prop('checked',false)
+            }else{
+                $(this).prop('checked',true)
+            }
+        });
+    }
+    //更简单的方法
+    function t3(){
+        $('input:checkbox').each(function(){
+           this.checked = !this.checked;
+        });
+    }
+</script>
+</html>

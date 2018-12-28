@@ -1,0 +1,204 @@
+<?php
+include_once("../class/ulevel_class.php");
+include_once("../class/system_class.php");
+session_start();
+$information=que_select_cl('information',1);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>乐游城会员管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/adminia.css" rel="stylesheet" />
+<link href="./css/adminia-responsive.css" rel="stylesheet" />
+<link href="./css/pages/dashboard.css" rel="stylesheet" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+        <ul class="nav pull-left">
+          <li><a href="./" >首页</a></li>
+          <li><a href="xitonggonggao.php">系统公告</a></li>
+          <li><a href="xiexin.php">站内通信</a></li>
+          <li><a href="wentijieda.php">问题解答</a></li>
+          <li><a href="youxiguize.php">游戏规则</a></li>
+          <li><a href="kaitongxiaji.php">审核状况</a></li>
+          <li><a href="tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span3" style=" margin-top:15px;">
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">公告栏</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2" style=" padding:0 10px;">
+            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1" scrolldelay="60" direction="up" align="middle" height="139">
+            <tr>
+			<td valign="top" ><?=$information['company']?><p></p></td>
+			</tr>
+            </marquee>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员资料</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <dl class="dl-horizontal">
+              <dt>会员编号：</dt>
+              <dd><?php echo $member['nickname'];?></dd>
+              <dt>会员昵称：</dt>
+              <dd><?php echo $member['username'];?></dd>
+              <dt>会员状态：</dt>
+              <dd>正式会员</dd>
+              <dt>会员级别：</dt>
+              <dd><?php echo $ul['lvname'];?></dd>
+			  <?php 
+				$sql="select * from member where ppath like '%{$member['ppath']}%'";
+				if($query=mysql_query($sql)){
+					$num=mysql_num_rows($query);
+				}
+			?>
+              <dt>团队会员数：</dt>
+              <dd><?php echo $num-1;?></dd>
+            </dl>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员管理</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <ul class="index_shengji">
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="shenqingshengji.php">申请升级</a></li>
+              <li><a href="tuanduijiegou.php">团队结构</a></li>
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="kaitongxiaji.php">开通下级</a></li>
+              <li><a href="xiugaiziliao.php">修改资料</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">团队状态</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2 text-center"> 暂无升级信息 </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+      <div class="span9" >
+	  
+	  <div class="widget">
+
+           <div class="page-header">
+            <h1>注册协议</h1>
+          </div>
+		  <form id="form1" name="form1" method="post" action="zhuce_biaodan.php" onSubmit="return CheckForm();">
+                           <div class="well">
+                            
+	                            <h2 style="margin-top: 20; text-align:center;">继续注册前请先阅读协议 </h2>
+
+<hr/>
+
+<p> 
+    <input name="ReID" type="hidden" id="ReID" value="112421">
+    <input name="FatherID" type="hidden" id="FatherID" value="118387">
+    <input name="hy_zy" type="hidden" id="hy_zy" value="0">
+  </p>
+  <p class="f14h">欢迎您加入乐游城会员管理系统。为维护网上公共秩序和社会稳定，请您自觉遵守以下条款。</p>
+  <p class="f14h">　不得利用本系统网站危害国家安全、泄露国家机密，不得侵犯国家、社会、集体和公民的合法权益，不得利用本俱乐部之网站制作、复制和传播下列信息：</p>
+  <p class="f14h">(一) 煽动抗拒、破坏宪法和法律、行政法规实施的；<br>
+	(二)煽动颠覆国家政权，推翻社会主义制度的； <br>
+    (三) 煽动分裂国家、破坏国家统一的； <br>
+    (四) 煽动民族仇恨、民族歧视、破坏民族团结的； <br>
+    (五)捏造或则歪曲事实、散布谣言、扰乱社会秩序的； <br>
+    (六) 宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的； <br>
+    (七) 公然侮辱他人或则捏造事实诽谤他人的，或则进行其他恶意攻击的； <br>
+	(八) 损害国家机关信誉的； <br>
+    (九) 其他违反宪法和法律行政法规的； <br>
+    (十) 进行商业广告行为的。 <br>
+    (十一) 在你注册或升级时请先"确定"你的爱心互助金到账户，方可注册或升级。否则管理员在规定时间内将冻结你的会员资格。 </p>
+	<?php
+// var_dump($_GET['tid']);
+$NickName=$_GET['nickname'];
+session_start();
+$_SESSION['one']=$NickName;
+
+$tid=$_GET['tid'];
+$_SESSION['two']=$tid;?>
+  <p align="center">
+    <input name="Submit" type="submit" class="btn" onClick="" value="同意注册">
+<!-- <input name="Submit1" type="submit" class="btn" onclick="parent.location.reload();" value="取消注册"> -->
+  </p>
+
+
+	                        </div>
+                        
+
+                    
+                    
+                </div>	  
+</form>
+      </div>
+      <!-- /span9 -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /content -->
+<div class="container" id="footer">
+  <p>Copyright 2015-2025 乐游城会员管理系统 版权所有</p>
+</div>
+<!-- /container -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>
+</body>
+</html>

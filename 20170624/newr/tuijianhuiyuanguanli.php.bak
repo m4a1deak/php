@@ -1,0 +1,294 @@
+<?php
+include("../member/check.php");
+//include("../member/check2.php");
+include_once("../function.php");
+$information=que_select_cl('information',1);
+session_start();
+	$us=getMemberbyID($_SESSION['ID']);
+	$bdName=$us['bdname'];
+	$rName=$us['rname'];
+	$FatherName=$us['fathername'];
+	$TreePlace=$us['treeplace'];
+	$UserID=$us['userid'];
+	$NickName=$us['nickname'];
+	$UserName=$us['username'];
+	$UserTel=$us['usertel'];
+	$UserAddress=$us['useraddress'];
+	$UserQQ=$us['userqq'];
+	$BankName=$us['bankname'];
+	$BankCard=$us['bankcard'];
+	$BankUserName=$us['bankusername'];
+	$BankAddress=$us['bankaddress'];
+	$uLevel=$us['ulevel'];
+	switch ($TreePlace)
+	{
+		case 0:
+			$quyu="顶层用户";
+			break;
+		case 1:
+			$quyu="A区";
+			break;
+		case 2:
+			$quyu="B区";
+			break;
+		case 3:
+			$quyu="C区";
+			break;
+		case 4:
+			$quyu="D区";
+			break;
+		case 5:
+			$quyu="E区";
+			break;
+		case 6:
+			$quyu="F区";
+			break;
+		case 7:
+			$quyu="G区";
+			break;	
+	}
+	switch ($uLevel)
+	{
+		case 1:
+			$jibie="一星会员";
+			break;
+		case 2:
+			$jibie="二星会员";
+			break;
+		case 3:
+			$jibie="三星会员";
+			break;
+		case 4:
+			$jibie="四星会员";
+			break;
+		case 5:
+			$jibie="五星会员";
+			break;
+	}	
+	$member = getMemberbyID($_SESSION['ID']);
+//var_dump($_SESSION['ID']);
+$ul = ulevel($member['ulevel']);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>乐游城会员管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/adminia.css" rel="stylesheet" />
+<link href="./css/adminia-responsive.css" rel="stylesheet" />
+<link href="./css/pages/dashboard.css" rel="stylesheet" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+        <ul class="nav pull-left">
+           <li><a href="./" >首页</a></li>
+          <li><a href="xitonggonggao.php">系统公告</a></li>
+          <li><a href="xiexin.php">站内通信</a></li>
+          <li><a href="wentijieda.php">问题解答</a></li>
+          <li><a href="youxiguize.php">游戏规则</a></li>
+          <li><a href="kaitongxiaji.php">审核状况</a></li>
+          <li><a href="tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span3" style=" margin-top:15px;">
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">公告栏</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2" style=" padding:0 10px;">
+            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1" scrolldelay="60" direction="up" align="middle" height="139">
+           <tr>
+			<td valign="top" ><?=$information['company']?><p></p></td>
+			</tr>
+            </marquee>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员资料</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <dl class="dl-horizontal">
+              <dt>会员编号：</dt>
+              <dd><?php echo $member['nickname'];?></dd>
+              <dt>会员昵称：</dt>
+              <dd><?php echo $member['username'];?></dd>
+              <dt>会员状态：</dt>
+              <dd>正式会员</dd>
+              <dt>会员级别：</dt>
+              <dd><?php echo $ul['lvname'];?></dd>
+			  <?php 
+				$sql="select * from member where ppath like '%{$us['ppath']}%'";
+				if($query=mysql_query($sql)){
+					$num=mysql_num_rows($query);
+				}
+			?>
+              <dt>团队会员数：</dt>
+              <dd><?php echo $num-1;?></dd>
+            </dl>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员管理</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <ul class="index_shengji">
+               <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="shenqingshengji.php">申请升级</a></li>
+              <li><a href="tuanduijiegou.php">团队结构</a></li>
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="kaitongxiaji.php">开通下级</a></li>
+              <li><a href="xiugaiziliao.php">修改资料</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">团队状态</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2 text-center"> 暂无升级信息 </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+      <div class="span9" >
+	  
+	  <div class="widget">
+                    
+                   
+           <div class="page-header">
+            <h1>推荐会员管理</h1>
+          </div>
+          
+          <table width="100%" height="100%" border="0">
+  <tr valign="top">
+    <td colspan="3"><table width="100%" cellpadding="3" cellspacing="1" border="0" align="center" class="table1">
+      <tr>
+        <td height="21" align="center">会员编号</td>
+        <td  align="center">会员姓名</td>
+        <td align="center">会员资格</td>
+        <td align="center">推荐人</td>
+<!--         <td align="center">接点人</td> -->
+        <td align="center">联系电话</td>
+        <td align="center">QQ号码</td>
+        <td align="center">激活时间</td>
+<!--        <td align="center">服务中心</td>-->
+        </tr>
+      <?php
+	  	$pagesize = 10; //设置每页记录数 
+	  	$sql = "SELECT * FROM `member` WHERE reid=".$_SESSION['ID'];
+		if($query = mysql_query($sql)){
+	  		$sum = mysql_num_rows($query); //计算总记录数 
+		}else{
+			$sum=0;	
+		} 
+		if($sum % $pagesize == 0) //计算总页数 
+			$total = (int)($sum/$pagesize); 
+		else 
+			$total = (int)($sum/$pagesize) + 1; 
+			if (isset($_GET['page'])) //获得页码 
+			{ 
+				$p = (int)$_GET['page']; 
+			} 
+			else 
+			{ 
+				$p = 1; 
+			} 
+		$start = $pagesize * ($p - 1); //计算起始记录 
+      	$sql = "SELECT * FROM `member` WHERE reid=".$_SESSION['ID']." limit ".$start.",".$pagesize;
+		if($query = mysql_query($sql)){
+		while ($row=mysql_fetch_array($query)){
+			$ul=ulevel($row['ulevel']);
+	  ?>
+      <tr>
+        <td height="21" align="center"><?=$row['userid']?></td>
+        <td align="center"><?=$row['username']?></td>
+        <td align="center"><?=$ul['lvname']?></td>
+        <td align="center"><?=$row['rname']?></td>
+    <!--     <td align="center"><?=$row['fathername']?></td>-->
+        <td align="center"><?=$row['usertel']?></td>
+        <td align="center"><?=$row['userqq']?></td>
+        <td align="center"><?=$row['pdt']?></td>
+<!--        <td align="center"><?=$row['bdname']?></td>-->
+      </tr>
+      <?php
+			}
+		}
+	  ?>
+      
+    </table>
+    <table width="100%" border="0" class="ziti">
+  	<tr>
+        <td height="21" align="right"><?php echo fenye($p,$pagesize,$sum,$total,$cx)?></td>
+      </tr>
+</table>
+    </td>
+  </tr>
+</table>
+                    
+                    
+                </div>	  
+
+      </div>
+      <!-- /span9 -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /content -->
+<div class="container" id="footer">
+  <p>Copyright 2015-2025 乐游城会员管理系统 版权所有</p>
+</div>
+<!-- /container -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>
+</body>
+</html>

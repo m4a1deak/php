@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <h1>一二三四我六七八</h1>
+        <h4>87654321</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.php">首页</a></li>
+            <li><a href="">空白格</a></li>
+            <li><a href="">空白格</a></li>
+            <li><a href="">空白格</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="lside">
+            <?php foreach($arts as $k=>$v){?>
+            <article>
+                <h2><a href="art.php?art_id=<?php echo $v['art_id']?>"><?php echo $v['title'];?></a></h2>
+                <div class="entry_header">
+                    <time><?php echo date('Y/m/d H:i:s',$v['pubtime']);?></time>
+                    by
+                    <a href="#">天天向上</a>
+                    <a class="catlink" href="index.php?cat_id=<?php echo $v['cat_id'];?>"><?php echo $v['catname'];?></a>
+                    <a class="comment" href="art.php?art_id=<?php echo $v['art_id'];?>"><?php echo $v['comm'];?>条评论</a>
+                </div>
+                <?php if(isset($v['thumb'])){?>
+                <img src="<?php echo ltrim($v['thumb'],'/');?>" alt="">
+                <?php }?>
+                <div class="entry_content">
+
+                    <?php echo $v['content'];?>
+                </div>
+            </article>
+            <?php }?>
+
+            <div id="pagebar">
+                Pages:&nbsp;
+                <?php foreach($page as $k=>$v){?>
+                <?php if($curr == $k){?>
+                <?php echo $k;}else{?>
+                <a href="index.php?<?php echo $v;?>"><?php echo $k;?></a>
+                <?php }?>
+                <?php }?>
+            </div>
+
+        </div>
+        <div id="rside">
+            <aside>
+                <form action="">
+                    <input type="text" name="search" placeholder="不要点我...">
+                </form>
+            </aside>
+            <aside>
+                <h4>--栏目--</h4>
+                <ul>
+                    <?php foreach($cats as $k=>$v){?>
+
+                    <?php if($v['cat_id'] == $_GET['cat_id']){?>
+                    <li style="font-size: 14px;font-weight: bold;"><?php echo $v['catname']?>&nbsp;(<?php echo $v['num']; ?>)</li>
+                    <?php }else{?>
+                    <li><a href="index.php?cat_id=<?php echo $v['cat_id']; ?>">
+                        <?php echo $v['catname'];?>
+                    </a>&nbsp;(<?php echo $v['num']; ?>)</li>
+
+                    <?php }?>
+
+
+                    <?php }?>
+                </ul>
+            </aside>
+
+
+
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; 2015 · GeneratePress · WordPress
+    </footer>
+</body>
+</html>

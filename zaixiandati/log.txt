@@ -1,0 +1,545 @@
+[2017-05-17 21:44:28] set names utf8
+[2017-05-17 21:44:28] DESC user
+[2017-05-17 21:44:28] select * from user where user_name='admin' and possword='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-05-17 21:44:28] set names utf8
+[2017-05-17 21:44:28] DESC ti
+[2017-05-17 21:44:28] select * from ti
+[2017-05-17 21:44:56] set names utf8
+[2017-05-17 21:44:56] DESC ti
+[2017-05-17 21:44:56] select * from ti
+[2017-05-18 12:04:39] set names utf8
+[2017-05-18 12:04:39] DESC user
+[2017-05-18 12:04:39] select * from user where user_name='admin' and possword='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-05-18 12:04:39] set names utf8
+[2017-05-18 12:04:39] DESC ti
+[2017-05-18 12:04:39] select * from ti
+[2017-05-18 12:06:25] set names utf8
+[2017-05-18 12:06:25] DESC ti
+[2017-05-18 12:06:25] select * from ti
+[2017-05-18 12:06:44] set names utf8
+[2017-05-18 12:06:44] DESC ti
+[2017-05-18 12:06:44] select * from ti
+[2017-05-18 12:06:59] set names utf8
+[2017-05-18 12:06:59] DESC ti
+[2017-05-18 12:06:59] select * from ti
+[2017-05-18 12:07:00] set names utf8
+[2017-05-18 12:07:00] DESC ti
+[2017-05-18 12:07:00] select * from ti
+[2017-05-19 11:29:36] set names utf8
+[2017-05-19 11:29:36] DESC admin
+[2017-05-19 11:29:36] select * from admin where admin_name='admin' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-05-19 11:29:48] set names utf8
+[2017-05-19 11:29:48] DESC admin
+[2017-05-19 11:29:48] select * from admin where admin_name='admin1' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-05-19 11:29:55] set names utf8
+[2017-05-19 11:29:55] DESC admin
+[2017-05-19 11:29:55] select * from admin where admin_name='admina' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-05-19 11:30:22] set names utf8
+[2017-05-19 11:30:22] DESC ti
+[2017-05-19 11:30:22] select count(*) from ti
+[2017-05-19 11:30:22] select * from ti limit 0,10
+[2017-05-19 11:33:27] set names utf8
+[2017-05-19 11:33:27] DESC ti
+[2017-05-19 11:33:27] select count(*) from ti
+[2017-05-19 11:33:27] select * from ti limit 0,10
+[2017-05-19 11:34:23] set names utf8
+[2017-05-19 11:34:23] DESC ti
+[2017-05-19 11:34:23] select count(*) from ti
+[2017-05-19 11:34:23] select * from ti limit 0,10
+[2017-05-19 11:35:41] set names utf8
+[2017-05-19 11:35:41] DESC ti
+[2017-05-19 11:35:41] select count(*) from ti
+[2017-05-19 11:35:41] select * from ti limit 0,10
+[2017-05-19 11:35:42] set names utf8
+[2017-05-19 11:35:42] DESC ti
+[2017-05-19 11:35:42] select count(*) from ti
+[2017-05-19 11:35:42] select * from ti limit 0,10
+[2017-05-19 11:35:43] set names utf8
+[2017-05-19 11:35:43] DESC ti
+[2017-05-19 11:35:43] DELETE FROM `ti` WHERE `ti_id`=4
+[2017-05-19 11:36:34] set names utf8
+[2017-05-19 11:36:34] DESC ti
+[2017-05-19 11:36:34] select count(*) from ti
+[2017-05-19 11:36:34] select * from ti limit 0,10
+[2017-05-19 11:36:37] set names utf8
+[2017-05-19 11:36:37] DESC ti
+[2017-05-19 11:36:37] select count(*) from ti
+[2017-05-19 11:36:37] select * from ti limit 10,10
+[2017-05-19 11:36:39] set names utf8
+[2017-05-19 11:36:39] DESC ti
+[2017-05-19 11:36:39] select count(*) from ti
+[2017-05-19 11:36:39] select * from ti limit 0,10
+[2017-05-19 11:36:41] set names utf8
+[2017-05-19 11:36:41] DESC ti
+[2017-05-19 11:36:41] DELETE FROM `ti` WHERE `ti_id`=41
+[2017-05-19 11:36:42] set names utf8
+[2017-05-19 11:36:42] DESC ti
+[2017-05-19 11:36:42] select count(*) from ti
+[2017-05-19 11:36:42] select * from ti limit 0,10
+[2017-05-19 11:38:08] set names utf8
+[2017-05-19 11:38:08] DESC ti
+[2017-05-19 11:38:08] select count(*) from ti
+[2017-05-19 11:38:08] select * from ti limit 0,10
+[2017-05-19 11:38:27] set names utf8
+[2017-05-19 11:38:27] DESC ti
+[2017-05-19 11:38:27] select count(*) from ti
+[2017-05-19 11:38:27] select * from ti limit 0,10
+[2017-05-19 11:38:46] set names utf8
+[2017-05-19 11:38:46] DESC ti
+[2017-05-19 11:38:46] select count(*) from ti
+[2017-05-19 11:38:46] select * from ti limit 0,10
+[2017-05-19 11:39:47] set names utf8
+[2017-05-19 11:39:47] DESC ti
+[2017-05-19 11:39:47] select count(*) from ti
+[2017-05-19 11:39:47] select * from ti limit 0,10
+[2017-05-19 11:40:25] set names utf8
+[2017-05-19 11:40:25] DESC ti
+[2017-05-19 11:40:25] select count(*) from ti
+[2017-05-19 11:40:25] select * from ti limit 0,10
+[2017-05-19 11:41:27] set names utf8
+[2017-05-19 11:41:27] DESC ti
+[2017-05-19 11:41:27] select count(*) from ti
+[2017-05-19 11:41:27] select * from ti limit 0,10
+[2017-05-19 11:44:10] set names utf8
+[2017-05-19 11:44:10] DESC ti
+[2017-05-19 11:44:10] select count(*) from ti
+[2017-05-19 11:44:10] select * from ti limit 0,10
+[2017-05-19 11:44:12] set names utf8
+[2017-05-19 11:44:12] DESC ti
+[2017-05-19 11:44:12] 
+[2017-05-19 11:45:33] set names utf8
+[2017-05-19 11:45:33] DESC ti
+[2017-05-19 11:45:33] select count(*) from ti
+[2017-05-19 11:45:33] select * from ti limit 0,10
+[2017-05-19 11:45:34] set names utf8
+[2017-05-19 11:45:34] DESC ti
+[2017-05-19 11:45:34] select * from ti where ti_id=5
+[2017-05-19 11:45:38] set names utf8
+[2017-05-19 11:45:38] DESC ti
+[2017-05-19 11:45:38] select count(*) from ti
+[2017-05-19 11:45:38] select * from ti limit 0,10
+[2017-05-19 11:45:42] set names utf8
+[2017-05-19 11:45:42] DESC ti
+[2017-05-19 11:45:42] select * from ti where ti_id=6
+[2017-05-19 11:46:07] set names utf8
+[2017-05-19 11:46:07] DESC ti
+[2017-05-19 11:46:07] select count(*) from ti
+[2017-05-19 11:46:07] select * from ti limit 0,10
+[2017-05-19 11:46:09] set names utf8
+[2017-05-19 11:46:09] DESC ti
+[2017-05-19 11:46:09] select * from ti where ti_id=6
+[2017-05-19 11:46:12] set names utf8
+[2017-05-19 11:46:12] DESC ti
+[2017-05-19 11:46:12] select count(*) from ti
+[2017-05-19 11:46:12] select * from ti limit 0,10
+[2017-05-19 11:46:14] set names utf8
+[2017-05-19 11:46:14] DESC ti
+[2017-05-19 11:46:14] select * from ti where ti_id=6
+[2017-05-19 11:46:41] set names utf8
+[2017-05-19 11:46:41] DESC ti
+[2017-05-19 11:46:41] select count(*) from ti
+[2017-05-19 11:46:41] select * from ti limit 0,10
+[2017-05-19 11:46:51] set names utf8
+[2017-05-19 11:46:51] DESC ti
+[2017-05-19 11:46:51] select * from ti where ti_id=5
+[2017-05-19 11:47:48] set names utf8
+[2017-05-19 11:47:48] DESC ti
+[2017-05-19 11:47:48] select count(*) from ti
+[2017-05-19 11:47:48] select * from ti limit 0,10
+[2017-05-19 11:47:50] set names utf8
+[2017-05-19 11:47:50] DESC ti
+[2017-05-19 11:47:50] select * from ti where ti_id=5
+[2017-05-19 11:48:03] set names utf8
+[2017-05-19 11:48:03] DESC ti
+[2017-05-19 11:48:03] select count(*) from ti
+[2017-05-19 11:48:03] select * from ti limit 0,10
+[2017-05-19 11:48:04] set names utf8
+[2017-05-19 11:48:04] DESC ti
+[2017-05-19 11:48:04] select * from ti where ti_id=5
+[2017-05-19 11:48:18] set names utf8
+[2017-05-19 11:48:18] DESC ti
+[2017-05-19 11:48:18] select count(*) from ti
+[2017-05-19 11:48:18] select * from ti limit 0,10
+[2017-05-19 11:48:19] set names utf8
+[2017-05-19 11:48:19] DESC ti
+[2017-05-19 11:48:19] select * from ti where ti_id=5
+[2017-05-19 11:48:32] set names utf8
+[2017-05-19 11:48:32] DESC ti
+[2017-05-19 11:48:32] select count(*) from ti
+[2017-05-19 11:48:32] select * from ti limit 0,10
+[2017-05-19 11:48:35] set names utf8
+[2017-05-19 11:48:35] DESC ti
+[2017-05-19 11:48:35] select * from ti where ti_id=5
+[2017-05-19 11:55:47] set names utf8
+[2017-05-19 11:55:47] DESC ti
+[2017-05-19 11:55:47] select count(*) from ti
+[2017-05-19 11:55:47] select * from ti limit 0,10
+[2017-05-19 11:55:49] set names utf8
+[2017-05-19 11:55:49] DESC ti
+[2017-05-19 11:55:49] select * from ti where ti_id=5
+[2017-05-19 11:56:24] set names utf8
+[2017-05-19 11:56:24] DESC ti
+[2017-05-19 11:56:24] select count(*) from ti
+[2017-05-19 11:56:24] select * from ti limit 0,10
+[2017-05-19 11:56:25] set names utf8
+[2017-05-19 11:56:25] DESC ti
+[2017-05-19 11:56:25] select * from ti where ti_id=5
+[2017-05-19 11:56:53] set names utf8
+[2017-05-19 11:56:53] DESC ti
+[2017-05-19 11:56:53] INSERT INTO `ti` (`ti_content`,`ti_daan`,`ti_xueke`,`zhendaan`,`is_show`) VALUES ('1+2等于几','1,2,3,4','1','3','1')
+[2017-05-19 11:56:57] set names utf8
+[2017-05-19 11:56:57] DESC ti
+[2017-05-19 11:56:57] select count(*) from ti
+[2017-05-19 11:56:57] select * from ti limit 0,10
+[2017-06-03 21:23:33] set names utf8
+[2017-06-03 21:23:33] DESC user
+[2017-06-03 21:23:33] select * from user where user_name='admin' and possword='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-03 21:23:33] set names utf8
+[2017-06-03 21:23:33] DESC ti
+[2017-06-03 21:23:33] select * from ti
+[2017-06-03 21:23:39] set names utf8
+[2017-06-03 21:23:39] DESC ti
+[2017-06-03 21:23:39] select * from ti
+[2017-06-03 21:23:40] set names utf8
+[2017-06-03 21:23:40] DESC ti
+[2017-06-03 21:23:40] select * from ti
+[2017-06-03 21:23:40] set names utf8
+[2017-06-03 21:23:40] DESC ti
+[2017-06-03 21:23:40] select * from ti
+[2017-06-03 21:23:40] set names utf8
+[2017-06-03 21:23:40] DESC ti
+[2017-06-03 21:23:40] select * from ti
+[2017-06-03 21:23:41] set names utf8
+[2017-06-03 21:23:41] DESC ti
+[2017-06-03 21:23:41] select * from ti
+[2017-06-03 21:23:41] set names utf8
+[2017-06-03 21:23:41] DESC ti
+[2017-06-03 21:23:41] select * from ti
+[2017-06-03 21:23:51] set names utf8
+[2017-06-03 21:23:51] DESC ti
+[2017-06-03 21:23:51] select * from ti
+[2017-06-03 21:23:52] set names utf8
+[2017-06-03 21:23:52] DESC ti
+[2017-06-03 21:23:52] select * from ti
+[2017-06-03 21:24:07] set names utf8
+[2017-06-03 21:24:07] DESC ti
+[2017-06-03 21:24:07] select * from ti
+[2017-06-03 21:24:28] set names utf8
+[2017-06-03 21:24:28] DESC ti
+[2017-06-03 21:24:28] select * from ti
+[2017-06-03 21:24:29] set names utf8
+[2017-06-03 21:24:29] DESC ti
+[2017-06-03 21:24:29] select * from ti
+[2017-06-03 21:24:29] set names utf8
+[2017-06-03 21:24:29] DESC ti
+[2017-06-03 21:24:29] select * from ti
+[2017-06-03 21:24:30] set names utf8
+[2017-06-03 21:24:30] DESC ti
+[2017-06-03 21:24:30] select * from ti
+[2017-06-03 21:24:30] set names utf8
+[2017-06-03 21:24:30] DESC ti
+[2017-06-03 21:24:30] select * from ti
+[2017-06-03 21:24:36] set names utf8
+[2017-06-03 21:24:36] DESC ti
+[2017-06-03 21:24:36] select * from ti
+[2017-06-03 21:24:37] set names utf8
+[2017-06-03 21:24:37] DESC ti
+[2017-06-03 21:24:37] select * from ti
+[2017-06-03 21:24:49] set names utf8
+[2017-06-03 21:24:49] DESC ti
+[2017-06-03 21:24:49] select * from ti
+[2017-06-03 21:24:49] set names utf8
+[2017-06-03 21:24:49] DESC ti
+[2017-06-03 21:24:49] select * from ti
+[2017-06-03 21:25:03] set names utf8
+[2017-06-03 21:25:03] DESC ti
+[2017-06-03 21:25:03] select * from ti
+[2017-06-03 21:25:04] set names utf8
+[2017-06-03 21:25:04] DESC ti
+[2017-06-03 21:25:04] select * from ti
+[2017-06-03 21:25:04] set names utf8
+[2017-06-03 21:25:04] DESC ti
+[2017-06-03 21:25:04] select * from ti
+[2017-06-03 21:25:05] set names utf8
+[2017-06-03 21:25:05] DESC ti
+[2017-06-03 21:25:05] select * from ti
+[2017-06-03 21:25:10] set names utf8
+[2017-06-03 21:25:10] DESC ti
+[2017-06-03 21:25:10] select * from ti
+[2017-06-03 21:25:12] set names utf8
+[2017-06-03 21:25:12] DESC ti
+[2017-06-03 21:25:12] select * from ti
+[2017-06-03 21:27:11] set names utf8
+[2017-06-03 21:27:11] DESC ti
+[2017-06-03 21:27:11] select * from ti
+[2017-06-03 21:28:56] set names utf8
+[2017-06-03 21:28:56] DESC ti
+[2017-06-03 21:28:56] select * from ti
+[2017-06-03 21:29:00] set names utf8
+[2017-06-03 21:29:00] DESC ti
+[2017-06-03 21:29:00] select * from ti
+[2017-06-06 20:31:17] set names utf8
+[2017-06-06 20:31:17] DESC admin
+[2017-06-06 20:31:17] select * from admin where admin_name='admina' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-10 18:12:18] set names utf8
+[2017-06-10 18:12:18] DESC admin
+[2017-06-10 18:12:18] select * from admin where admin_name='admina' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-10 18:13:20] set names utf8
+[2017-06-10 18:13:20] DESC admin
+[2017-06-10 18:13:20] select * from admin where admin_name='admina' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-14 19:42:56] set names utf8
+[2017-06-14 19:42:56] DESC user
+[2017-06-14 19:42:56] select * from user where user_name='admin' and possword='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-14 19:42:56] set names utf8
+[2017-06-14 19:42:56] DESC ti
+[2017-06-14 19:42:56] select * from ti
+[2017-06-14 19:43:29] set names utf8
+[2017-06-14 19:43:29] DESC ti
+[2017-06-14 19:43:29] select * from ti
+[2017-06-14 19:43:43] set names utf8
+[2017-06-14 19:43:43] DESC ti
+[2017-06-14 19:43:43] select * from ti
+[2017-06-14 20:04:41] set names utf8
+[2017-06-14 20:04:41] DESC user
+[2017-06-14 20:04:41] select * from user
+[2017-06-14 20:09:57] set names utf8
+[2017-06-14 20:09:57] DESC user
+[2017-06-14 20:09:57] insert into user ('user_name','possword') value(123,202cb962ac59075b964b07152d234b70)
+[2017-06-14 20:11:35] set names utf8
+[2017-06-14 20:11:35] DESC user
+[2017-06-14 20:11:35] insert into user ('user_name','possword') values(123,202cb962ac59075b964b07152d234b70)
+[2017-06-14 20:11:41] set names utf8
+[2017-06-14 20:11:41] DESC user
+[2017-06-14 20:11:41] insert into user ('user_name','possword') values(123,202cb962ac59075b964b07152d234b70)
+[2017-06-14 20:12:21] set names utf8
+[2017-06-14 20:12:21] DESC user
+[2017-06-14 20:14:20] set names utf8
+[2017-06-14 20:14:20] DESC user
+[2017-06-14 20:16:29] set names utf8
+[2017-06-14 20:16:29] DESC user
+[2017-06-14 20:17:01] set names utf8
+[2017-06-14 20:17:01] DESC user
+[2017-06-14 20:17:02] insert into user (user_name,possword) values('123123','202cb962ac59075b964b07152d234b70')
+[2017-06-14 20:17:46] set names utf8
+[2017-06-14 20:17:46] DESC user
+[2017-06-14 20:17:46] insert into user (user_name,possword) values('321','caf1a3dfb505ffed0d024130f58c5cfa')
+[2017-06-14 20:19:18] set names utf8
+[2017-06-14 20:19:18] DESC admin
+[2017-06-14 20:19:18] select * from admin where admin_name='admina' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-14 20:19:37] set names utf8
+[2017-06-14 20:19:37] DESC ti
+[2017-06-14 20:19:37] select count(*) from ti
+[2017-06-14 20:19:37] select * from ti limit 0,10
+[2017-06-14 20:31:05] set names utf8
+[2017-06-14 20:31:05] DESC user
+[2017-06-14 20:31:05] select * from user where user_name='321' and possword='caf1a3dfb505ffed0d024130f58c5cfa' limit 1
+[2017-06-14 20:31:05] set names utf8
+[2017-06-14 20:31:05] DESC ti
+[2017-06-14 20:31:05] select * from ti
+[2017-06-14 20:36:47] set names utf8
+[2017-06-14 20:36:47] DESC ti
+[2017-06-14 20:36:47] select * from ti
+[2017-06-14 20:36:49] set names utf8
+[2017-06-14 20:36:49] DESC user
+[2017-06-14 20:37:07] set names utf8
+[2017-06-14 20:37:07] DESC user
+[2017-06-14 20:37:34] set names utf8
+[2017-06-14 20:37:34] DESC ti
+[2017-06-14 20:37:34] select * from ti
+[2017-06-14 20:37:35] set names utf8
+[2017-06-14 20:37:35] DESC ti
+[2017-06-14 20:37:35] select * from ti
+[2017-06-14 20:37:40] set names utf8
+[2017-06-14 20:37:40] DESC user
+[2017-06-14 20:37:40] update user set fenshu=10 where user_name=321
+[2017-06-14 20:38:14] set names utf8
+[2017-06-14 20:38:14] DESC ti
+[2017-06-14 20:38:14] select * from ti
+[2017-06-14 20:38:20] set names utf8
+[2017-06-14 20:38:20] DESC user
+[2017-06-14 20:38:20] select * from user where user_name='admin' and possword='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2017-06-14 20:38:20] set names utf8
+[2017-06-14 20:38:20] DESC ti
+[2017-06-14 20:38:20] select * from ti
+[2017-06-14 20:38:36] set names utf8
+[2017-06-14 20:38:36] DESC user
+[2017-06-14 20:38:36] update user set fenshu=70 where user_name=admin
+[2017-06-14 20:40:22] set names utf8
+[2017-06-14 20:40:22] DESC user
+[2017-06-14 20:40:22] insert into user (user_name,possword) values('1001','b8c37e33defde51cf91e1e03e51657da')
+[2017-06-14 20:40:27] set names utf8
+[2017-06-14 20:40:27] DESC user
+[2017-06-14 20:40:27] insert into user (user_name,possword) values('1002','fba9d88164f3e2d9109ee770223212a0')
+[2017-06-14 20:40:35] set names utf8
+[2017-06-14 20:40:35] DESC user
+[2017-06-14 20:40:35] insert into user (user_name,possword) values('1003','aa68c75c4a77c87f97fb686b2f068676')
+[2017-06-14 20:42:08] set names utf8
+[2017-06-14 20:42:08] DESC 
+[2017-06-14 20:42:50] set names utf8
+[2017-06-14 20:42:50] DESC user
+[2017-06-14 20:42:50] select * from user
+[2017-06-14 20:42:50] set names utf8
+[2017-06-14 20:42:50] DESC user
+[2017-06-14 20:42:50] select * from user
+[2017-06-14 20:42:52] set names utf8
+[2017-06-14 20:42:52] DESC user
+[2017-06-14 20:42:52] select * from user
+[2017-06-14 20:42:59] set names utf8
+[2017-06-14 20:42:59] DESC user
+[2017-06-14 20:42:59] select * from user
+[2017-06-14 20:44:53] set names utf8
+[2017-06-14 20:44:53] DESC user
+[2017-06-14 20:44:53] select * from user
+[2017-06-14 20:44:55] set names utf8
+[2017-06-14 20:44:55] DESC user
+[2017-06-14 20:44:55] select * from user
+[2017-06-14 20:45:17] set names utf8
+[2017-06-14 20:45:17] DESC user
+[2017-06-14 20:45:17] select * from user where user_name='1001' and possword='b8c37e33defde51cf91e1e03e51657da' limit 1
+[2017-06-14 20:45:17] set names utf8
+[2017-06-14 20:45:17] DESC ti
+[2017-06-14 20:45:17] select * from ti
+[2017-06-14 20:45:26] set names utf8
+[2017-06-14 20:45:26] DESC user
+[2017-06-14 20:45:26] update user set fenshu=10 where user_name=1001
+[2017-06-14 20:45:29] set names utf8
+[2017-06-14 20:45:29] DESC user
+[2017-06-14 20:45:29] select * from user
+[2017-06-14 20:45:42] set names utf8
+[2017-06-14 20:45:42] DESC user
+[2017-06-14 20:45:42] select * from user
+[2017-06-14 20:45:43] set names utf8
+[2017-06-14 20:45:43] DESC user
+[2017-06-14 20:45:43] select * from user
+[2018-01-17 21:44:14] set names utf8
+[2018-01-17 21:44:14] DESC user
+[2018-01-17 21:44:14] select * from user where user_name='admin' and possword='202cb962ac59075b964b07152d234b70' limit 1
+[2018-01-17 21:45:33] set names utf8
+[2018-01-17 21:45:33] DESC user
+[2018-01-17 21:45:33] select * from user where user_name='1001' and possword='b8c37e33defde51cf91e1e03e51657da' limit 1
+[2018-01-17 21:45:33] set names utf8
+[2018-01-17 21:45:33] DESC ti
+[2018-01-17 21:45:33] select * from ti
+[2018-01-17 21:45:49] set names utf8
+[2018-01-17 21:45:49] DESC user
+[2018-01-17 21:45:49] update user set fenshu=30 where user_name=1001
+[2018-01-17 21:46:22] set names utf8
+[2018-01-17 21:46:22] DESC user
+[2018-01-17 21:46:22] select * from user where user_name='1001' and possword='b8c37e33defde51cf91e1e03e51657da' limit 1
+[2018-01-17 21:46:22] set names utf8
+[2018-01-17 21:46:22] DESC ti
+[2018-01-17 21:46:22] select * from ti
+[2018-01-17 21:46:26] set names utf8
+[2018-01-17 21:46:26] DESC ti
+[2018-01-17 21:46:26] select * from ti
+[2018-01-17 21:46:27] set names utf8
+[2018-01-17 21:46:27] DESC ti
+[2018-01-17 21:46:27] select * from ti
+[2018-01-17 21:46:27] set names utf8
+[2018-01-17 21:46:27] DESC ti
+[2018-01-17 21:46:27] select * from ti
+[2018-01-17 21:46:27] set names utf8
+[2018-01-17 21:46:27] DESC ti
+[2018-01-17 21:46:27] select * from ti
+[2018-01-17 21:46:27] set names utf8
+[2018-01-17 21:46:27] DESC ti
+[2018-01-17 21:46:27] select * from ti
+[2018-01-17 21:46:28] set names utf8
+[2018-01-17 21:46:28] DESC ti
+[2018-01-17 21:46:28] select * from ti
+[2018-01-17 21:46:28] set names utf8
+[2018-01-17 21:46:28] DESC ti
+[2018-01-17 21:46:28] select * from ti
+[2018-01-17 21:46:28] set names utf8
+[2018-01-17 21:46:28] DESC ti
+[2018-01-17 21:46:28] select * from ti
+[2018-01-17 21:46:28] set names utf8
+[2018-01-17 21:46:28] DESC ti
+[2018-01-17 21:46:28] select * from ti
+[2018-01-17 21:46:28] set names utf8
+[2018-01-17 21:46:28] DESC ti
+[2018-01-17 21:46:28] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:29] set names utf8
+[2018-01-17 21:46:29] DESC ti
+[2018-01-17 21:46:29] select * from ti
+[2018-01-17 21:46:30] set names utf8
+[2018-01-17 21:46:30] DESC ti
+[2018-01-17 21:46:30] select * from ti
+[2018-01-17 21:46:30] set names utf8
+[2018-01-17 21:46:30] DESC ti
+[2018-01-17 21:46:30] select * from ti
+[2018-01-17 21:46:30] set names utf8
+[2018-01-17 21:46:30] DESC ti
+[2018-01-17 21:46:30] select * from ti
+[2018-01-17 21:46:30] set names utf8
+[2018-01-17 21:46:30] DESC ti
+[2018-01-17 21:46:30] select * from ti
+[2018-01-17 21:46:30] set names utf8
+[2018-01-17 21:46:30] DESC ti
+[2018-01-17 21:46:30] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:31] set names utf8
+[2018-01-17 21:46:31] DESC ti
+[2018-01-17 21:46:31] select * from ti
+[2018-01-17 21:46:32] set names utf8
+[2018-01-17 21:46:32] DESC ti
+[2018-01-17 21:46:32] select * from ti
+[2018-01-17 21:46:32] set names utf8
+[2018-01-17 21:46:32] DESC ti
+[2018-01-17 21:46:32] select * from ti
+[2018-01-17 21:46:32] set names utf8
+[2018-01-17 21:46:32] DESC ti
+[2018-01-17 21:46:32] select * from ti
+[2018-01-17 21:46:32] set names utf8
+[2018-01-17 21:46:32] DESC ti
+[2018-01-17 21:46:32] select * from ti
+[2018-01-17 21:46:32] set names utf8
+[2018-01-17 21:46:32] DESC ti
+[2018-01-17 21:46:32] select * from ti
+[2018-01-17 21:46:33] set names utf8
+[2018-01-17 21:46:33] DESC ti
+[2018-01-17 21:46:33] select * from ti
+[2018-01-17 21:47:00] set names utf8
+[2018-01-17 21:47:00] DESC ti
+[2018-01-17 21:47:00] select * from ti
+[2018-01-17 21:47:02] set names utf8
+[2018-01-17 21:47:02] DESC ti
+[2018-01-17 21:47:02] select * from ti
+[2018-01-17 21:47:21] set names utf8
+[2018-01-17 21:47:21] DESC admin
+[2018-01-17 21:47:21] select * from admin where admin_name='admin' and password='21232f297a57a5a743894a0e4a801fc3' limit 1
+[2018-01-17 21:47:30] set names utf8
+[2018-01-17 21:47:30] DESC admin
+[2018-01-17 21:47:30] select * from admin where admin_name='admin' and password='e10adc3949ba59abbe56e057f20f883e' limit 1
+[2018-01-17 21:47:55] set names utf8
+[2018-01-17 21:47:55] DESC admin
+[2018-01-17 21:47:55] select * from admin where admin_name='admin' and password='21232f297a57a5a743894a0e4a801fc3' limit 1

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/art.css">
+</head>
+<body>
+    <header>
+        <h1>一二三四我六七八</h1>
+        <h4>87654321</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.php">首页</a></li>
+            <li><a href="">空白格</a></li>
+            <li>
+                <a href="">空白格</a></li>
+            <li><a href="">空白格</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="lside">
+            <article>
+                <h2><a href="#"><?php echo $arts['title'];?></a></h2>
+                <div class="entry_header">
+                    <time><?php echo date('Y/m/d H:i:s',$arts['pubtime']);?></time>
+                    by
+                    <a href="#">天天向上</a>
+                    <a class="catlink" href="#"><?php echo $arts['catname'];?></a>
+                    <a class="comment" href="#"><?php echo $arts['comm'];?>条评论</a>
+                </div>
+
+                <?php if(isset($arts['big'])){?>
+                <img src="<?php echo ltrim($arts['big'],'/');?>" alt="">
+                <?php }?>
+
+                <div class="entry_content">
+
+                    <?php echo $arts['content'];?>
+                </div>
+            </article>
+            <div id="comments">
+                <?php foreach($comms as $v){?>
+                <ol>
+                    <li>
+                        <div style="width: 100px;height: 100px;border-radius: 50px 50px 50px 50px">
+                            <img src="images/<?php echo $v['pic'];?>" alt="" style="width: 100%;height: 100%;"></div>
+                        <cite><a href="#"><?php echo $v['nick'];?></a></cite> <br>
+                        <time><?php echo date('Y/m/d H:i:s',$v['pubtime']);?></time>
+                    </li>
+                    <li>
+                        <?php echo $v['content'];?>
+                    </li>
+                </ol>
+                <?php }?>
+                <?php if(!$comms[0] == 0){?>
+                <div id="pagebar">
+                    Pages:&nbsp;
+                    <?php foreach($page as $k=>$v){?>
+                    <?php if($curr == $k){?>
+                    <?php echo $k;}else{?>
+                    <a href="art.php?<?php echo $v;?>"><?php echo $k;?></a>
+                    <?php }?>
+                    <?php }?>
+                </div>
+                <?php }?>
+            </div>
+            <div id="respond" class="comment-respond">
+                <h3>Leave a Comment</h3>
+                <form action="#" method="post">
+                    <p>
+                    <input placeholder="姓名" name="nick" type="text" value="" size="30">
+                    </p>
+                    <p>
+                    <input placeholder="邮箱" name="email" type="text" value="" size="30">
+                    </p>
+                    <p>
+                    <textarea name="content" cols="45" rows="8" aria-required="true"></textarea>
+                    <p>
+                    <input type="submit" value="提交">
+                </p>
+                </form>
+            </div>
+        </div>
+        <div id="rside">
+            <aside>
+                <form action="">
+                    <input type="text" name="search" placeholder="不要点我...">
+                </form>
+            </aside>
+            <aside>
+                <h4>--栏目--</h4>
+                <ul>
+
+
+                    <?php foreach($cats as $k=>$v){?>
+
+                    <li><a href="index.php?cat_id=<?php echo $v['cat_id']; ?>">
+                        <?php echo $v['catname'];?>
+
+
+
+                    </a>&nbsp;(<?php echo $v['num']; ?>)</li>
+
+
+                    <?php }?>
+
+
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; 2015 · GeneratePress · WordPress
+    </footer>
+</body>
+</html>

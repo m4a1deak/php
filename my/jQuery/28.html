@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 1024px;
+            height: 768px;
+            overflow: hidden;
+            position:relative;
+        }
+        ul{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 200px;
+            height: 40px;
+        }
+        li{
+            float: left;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            list-style: none;
+            line-height: 30px;
+            background :white;
+            border:1px solid blue;
+            border-radius: 100%;
+        }
+        .active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="ad">
+    <img src="a.jpg" alt="">
+    <img src="b.jpg" alt="">
+    <img src="c.jpg" alt="">
+    <ul>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    var i =0;
+setInterval(function(){
+    $('#ad img:first').hide(2000,function(){
+        $(this).appendTo('#ad').show();
+        $('li').removeClass('active');
+        $('li').get(++i%3).className='active';
+    });
+},1000);
+
+</script>
+</html>

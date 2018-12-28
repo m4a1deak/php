@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>jQuery对象与DOM对象的关系</h1>
+<ul>
+    <li>导航1</li>
+    <li>导航2</li>
+    <li>导航3</li>
+    <li>导航4</li>
+</ul>
+<p id="test">test</p>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //下面这行充分证明$('选择器')返回值不是DOM对象
+    //$('#test').style.background='red';
+
+    //下面这两行 充分证明DOM对象不是$()的返回值
+    //var test = document.getElementById('test');
+    //test.css('background','red');
+
+    //$()返回的是对象 是jQuery对象而不是DOM对象
+
+    //关系:
+    //Jquery按选择器 选中一个或多个DOM对象
+    //把这些DOM对象放在jQuery对象中
+    // 索引分别是 0 1 2 3 ... N
+    console.log($('li'));
+
+    //把jquery对象转换为DOM对象 直接[索引]取值
+    $('li')[2].style.background='red';
+
+    //也可以用get(索引)方法
+    $('li').get(3).style.background='blue';
+
+    //DOM=>jquery
+    var test = document.getElementById('test');
+    $(test).css('background','black');
+</script>
+</html>

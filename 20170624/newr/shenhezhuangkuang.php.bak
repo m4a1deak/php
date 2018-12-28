@@ -1,0 +1,284 @@
+<?php 
+include_once("../function.php");
+$information=que_select_cl('information',1);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>乐游城会员管理系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+<link href="./css/font-awesome.css" rel="stylesheet" />
+<link href="./css/adminia.css" rel="stylesheet" />
+<link href="./css/adminia-responsive.css" rel="stylesheet" />
+<link href="./css/pages/dashboard.css" rel="stylesheet" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+        <ul class="nav pull-left">
+          <li><a href="./" >首页</a></li>
+          <li><a href="xitonggonggao.php">系统公告</a></li>
+          <li><a href="xiexin.php">站内通信</a></li>
+          <li><a href="wentijieda.php">问题解答</a></li>
+          <li><a href="youxiguize.php">游戏规则</a></li>
+          <li><a href="kaitongxiaji.php">审核状况</a></li>
+          <li><a href="tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span3" style=" margin-top:15px;">
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">公告栏</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2" style=" padding:0 10px;">
+            <marquee onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1" scrolldelay="60" direction="up" align="middle" height="139">
+           <tr>
+			<td valign="top" ><?=$information['company']?><p></p></td>
+			</tr>
+            </marquee>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员资料</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <dl class="dl-horizontal">
+             <dt>会员编号：</dt>
+              <dd><?php echo $member['nickname'];?></dd>
+              <dt>会员昵称：</dt>
+              <dd><?php echo $member['username'];?></dd>
+              <dt>会员状态：</dt>
+              <dd>正式会员</dd>
+              <dt>会员级别：</dt>
+              <dd><?php echo $ul['lvname'];?></dd>
+			  <?php 
+				$sql="select * from member where ppath like '%{$member['ppath']}%'";
+				if($query=mysql_query($sql)){
+					$num=mysql_num_rows($query);
+				}
+			?>
+              <dt>团队会员数：</dt>
+              <dd><?php echo $num-1;?></dd>
+            </dl>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">会员管理</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2">
+            <ul class="index_shengji">
+             
+			   <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="shenqingshengji.html">申请升级</a></li>
+              <li><a href="tuanduijiegou.html">团队结构</a></li>
+              <li style=" margin-left:-1px; border-right:1px #8d8e12 dashed;"><a href="kaitongxiaji.html">开通下级</a></li>
+              <li><a href="xiugaiziliao.html">修改资料</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+        <div class="widget">
+          <div class="widget-header2">
+            <h3 style="text-align:center;">团队状态</h3>
+          </div>
+          <!-- /widget-header -->
+          <div class="widget-content2 text-center"> 暂无升级信息 </div>
+          <!-- /widget-content -->
+        </div>
+        <!-- /widget -->
+      </div>
+      <div class="span9" >
+	  
+	  <div class="widget">
+                    
+                   
+           <div class="page-header">
+            <h1>审核状况</h1>
+          </div>
+          
+          <div class="table-overflow">
+                           <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>收款人编号</th>
+                                    <th>姓名</th>
+                                    <th>银行名称</th>
+                                    <th>银行帐号</th>
+	                                <th>手机号</th>
+                                    <th>金额</th>
+                                    <th>备注</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td><font color="#FF0000">未审核</font></td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                                <tr>
+                                    <td>6890848</td>
+                                    <td>admin</td>
+                                    <td>建设</td>
+                                    <td></td>
+	                                <td>15964596555</td>
+                                    <td>70</td>
+                                    <td>第1级</td>
+                                    <td>已审核</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                </div>	  
+
+      </div>
+      <!-- /span9 -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /content -->
+<div class="container" id="footer">
+  <p>Copyright 2015-2025 乐游城会员管理系统 版权所有</p>
+</div>
+<!-- /container -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="./js/excanvas.min.js"></script>
+<script src="./js/jquery.flot.js"></script>
+<script src="./js/jquery.flot.pie.js"></script>
+<script src="./js/jquery.flot.orderBars.js"></script>
+<script src="./js/jquery.flot.resize.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/charts/bar.js"></script>
+</body>
+</html>

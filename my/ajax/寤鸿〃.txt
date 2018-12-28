@@ -1,0 +1,40 @@
+mysql> create table msg(
+    -> id int primary key auto_increment,
+    -> title varchar(20),
+    -> content varchar(100)
+    -> )charset=utf8;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_text |
++----------------+
+| a              |
+| aa.sql         |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| msg            |
+| result         |
+| t              |
+| user           |
++----------------+
+13 rows in set (0.00 sec)
+
+mysql> desc ,msg;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'msg' at line 1
+mysql> desc msg;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| title   | varchar(20)  | YES  |     | NULL    |                |
+| content | varchar(100) | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql>

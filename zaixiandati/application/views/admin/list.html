@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	<link href="application/views/admin/tyles/general.css" rel="stylesheet" type="text/css" />
+	<link href="application/views/admin/styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+	<span class="action-span"><a href="index.php?p=admin&c=Model&a=add">添加试题</a></span>
+	<span class="action-span1"><a href="index.php?act=main">管理中心</a> </span><span id="search_id" class="action-span1"> -试题列表 </span>
+	<div style="clear:both"></div>
+</h1>
+
+
+<form method="post" action="" name="listForm" onsubmit="return confirmSubmit(this)">
+  <!-- start goods list -->
+	<div class="list-div" id="listDiv">
+		<table cellpadding="3" cellspacing="1">
+			<tbody>
+				<tr>
+					<th>编号</th>
+					<th>学科</th>
+					<th>考试题目</th>
+					<th>可选答案</th>
+					<th>正确答案</th>
+					<th>是否显示</th>
+					<th>操作</th>
+				</tr>
+				<?php foreach($a as $v){?>
+    <tr>
+		<td style="background-color: rgb(255, 255, 255);"><?php echo $v['ti_id'];?></td>
+		<td align="center" style="background-color: rgb(255, 255, 255);">
+			<?php
+			switch($v['ti_xueke']){
+		case 1:echo "数学" ;break;
+		case 2:echo "英语" ;break;
+		case 3:echo "语文" ;break;}?>
+		</td>
+		<td class="first-cell" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_name', 31)"><?php echo $v['ti_content'];?></span></td>
+		<td style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_sn', 31)" title="点击修改内容" style=""><?php echo $v['ti_daan'];?></span></td>
+		<td align="right" style="background-color: rgb(255, 255, 255);"><span onclick="listTable.edit(this, 'edit_goods_price', 31)"><?php
+			switch($v['zhendaan']){
+		case 1:echo "A" ;break;
+		case 2:echo "B" ;break;
+		case 3:echo "C" ;break;
+		case 4:echo "D" ;break;
+		}?>
+		</span></td>
+		<td align="center" style="background-color: rgb(255, 255, 255);"><?php switch($v['is_show']){
+		case 0:echo "<img src='application/views/admin/images/no.gif' onclick='>";break;
+		case 1:echo "<img src='application/views/admin/images/yes.gif' onclick=''>";break;
+		}?></td>
+
+			<td align="center" style="background-color: rgb(255, 255, 255);">
+		  <a href="index.php?p=admin&c=model&a=update&ti_id=<?php echo $v['ti_id'];?>" title="编辑">编辑</a>
+
+		  <a href="index.php?p=admin&c=model&a=delete&ti_id=<?php echo $v['ti_id'];?>" onclick="listTable.remove(31, '您确实要删除这道题吗？')" title="回收站">删除</a>
+		  <img src="application/views/admin/images/empty.gif" width="16" height="16" border="0">          </td>
+  </tr>
+				<?php }?>
+
+
+  <!-- end 这段代码没有格式化，只是暂时显示数据用 开发的时候将会删除-->
+  </tbody>
+ </table>
+<!-- end goods list -->
+
+	<!-- 分页 -->
+	<table id="page-table" cellspacing="0">
+		<tbody>
+			<tr>
+				<td align="right" nowrap="true" style="background-color: rgb(255, 255, 255);">
+					<?php echo $pageinfo;?>
+					<!-- $Id: page.htm 14216 2008-03-10 02:27:21Z testyang $ <?php ?>
+					<!--<div id="turn-page">
+						总计  <span id="totalRecords">22</span>个记录分为 <span id="totalPages">2</span>页当前第 <span id="pageCurrent">1</span>
+						页，每页 <input type="text" size="3" id="pageSize" value="15" onkeypress="return listTable.changePageSize(event)">
+						<span id="page-link">
+							<a href="javascript:listTable.gotoPageFirst()">第一页</a>
+							<a href="javascript:listTable.gotoPagePrev()">上一页</a>
+							<a href="javascript:listTable.gotoPageNext()">下一页</a>
+							<a href="javascript:listTable.gotoPageLast()">最末页</a>
+							<select id="gotoPage" onchange="listTable.gotoPage(this.value)">
+							<option value="1">1</option><option value="2">2</option>          </select>
+						</span>
+					</div>-->
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</form>
+
+
+</body>
+</html>

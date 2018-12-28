@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="fc.jpg" alt="">
+	<input type="button" value="重新开始" onclick="ss()">
+	<input type="button" value="停止" onclick="xx()">
+	<input type="button" value="继续" onclick="zz()">
+</body>
+<script>
+var x = 0;
+var num = 0;
+ 	var img = document.getElementsByTagName("img")[0];
+	function bian()
+	{
+		if(num >0){
+		num +=5;
+		img.style.transform = "rotate("+num+"deg)";
+		x =num;
+		}
+		
+
+	}
+	function ss(){
+		num = 5;
+	}
+	function xx(){
+		num = 0;
+	}
+	function zz(){
+		num =x+5;
+	}
+	setInterval("bian()",100);
+	</script>
+	
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" name="" id="" onfocus="f1()" onblur="f2()">
+<input type="text" name="" id="" >
+<h1 onmousemove="f3()" onmouseout="f4()">经过我会变色</h1>
+</body>
+<script>
+    var inps = document.getElementsByTagName('input');
+    function f1(){
+        inps[0].style.background='red';
+    }
+    function f2(){
+        inps[0].style.background='#fff';
+    }
+    var h = document.getElementsByTagName('h1');
+    function f3(){
+        h[0].style.color='pink';
+    }
+    function f4(){
+        h[0].style.color='#000';
+    }
+</script>
+</html>

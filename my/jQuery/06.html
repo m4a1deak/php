@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            height:20px;
+            border : 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>年龄</td>
+    </tr>
+    <tr>
+        <td>张飞</td>
+        <td>男</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>孙尚香</td>
+        <td>女</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>赵云</td>
+        <td>男</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>花木兰</td>
+        <td></td>
+        <td><span>22</span></td>
+    </tr>
+</table>
+<p><br /></p>
+<p>a</p>
+<p></p>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //找td中含有'女'的
+    $('td:contains(女)').css('background','red');
+    //找td为空的
+    $('td:empty').css('background','red');
+    //找不为空的p标签 p标签有父节点资格的 就是有内容的 不为空的
+    $('p:parent').css('background','blue');
+    //找td下含有span的
+    $('td:has(span)').css('background','pink');
+
+</script>
+</html>

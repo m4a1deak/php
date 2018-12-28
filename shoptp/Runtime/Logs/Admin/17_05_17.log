@@ -1,0 +1,85 @@
+[ 2017-05-17T09:18:43+08:00 ] ::1 /shoptp/index.php/admin/goods/list
+ERR: 非法操作:list
+
+[ 2017-05-17T10:22:41+08:00 ] ::1 /shoptp/index.php/admin/login/manager
+ERR: 无法加载控制器:Login
+
+[ 2017-05-17T12:16:07+08:00 ] ::1 /shoptp/index.php/admin/anager/index
+ERR: 无法加载控制器:Anager
+
+[ 2017-05-17T12:17:00+08:00 ] ::1 /shoptp/index.php/admin/manager/index
+ERR: 非法操作:index
+
+[ 2017-05-17T12:17:05+08:00 ] ::1 /shoptp/index.php/admin/managerlogin
+ERR: 无法加载控制器:Managerlogin
+
+[ 2017-05-17T12:19:33+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/manager/login
+ERR: 非法操作:admin
+
+[ 2017-05-17T12:20:36+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/manager/login
+ERR: 非法操作:admin
+
+[ 2017-05-17T12:20:38+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/manager/login
+ERR: 非法操作:admin
+
+[ 2017-05-17T12:36:51+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( guanhui1995 ) LIMIT 1  
+
+[ 2017-05-17T12:38:19+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995,mg_pwd=guanhui1995 ) LIMIT 1  
+
+[ 2017-05-17T12:39:28+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995 and mg_pwd=guanhui1995 ) LIMIT 1  
+
+[ 2017-05-17T12:41:09+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995 and mg_pwd=guanhui1995 ) LIMIT 1  
+
+[ 2017-05-17T12:42:36+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995 and mg_pwd=guanhui1995 ) 
+
+[ 2017-05-17T12:46:18+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995 and mg_pwd=guanhui1995 ) 
+
+[ 2017-05-17T12:47:08+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'guanhui1995' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=guanhui1995 and mg_pwd=1123 ) 
+
+[ 2017-05-17T13:09:03+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'xiaoming' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=xiaoming and mg_pwd=123456 ) LIMIT 1  
+
+[ 2017-05-17T13:10:30+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=xiaoming and mg_pwd= ) 
+
+[ 2017-05-17T13:10:35+08:00 ] ::1 /shoptp/index.php/admin/manager/login.html
+ERR: 1054:Unknown column 'xiaoming' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name=xiaoming and mg_pwd=123456 ) 
+
+[ 2017-05-17T13:25:50+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/index/showlist
+ERR: 非法操作:admin
+
+[ 2017-05-17T13:27:07+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/index/showlist
+ERR: 非法操作:admin
+
+[ 2017-05-17T13:27:11+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/index/showlist
+ERR: 非法操作:admin
+
+[ 2017-05-17T13:27:13+08:00 ] ::1 /shoptp/index.php/admin/manager/admin/index/showlist
+ERR: 非法操作:admin
+
+[ 2017-05-17T13:27:18+08:00 ] ::1 /shoptp/index.php/admin/manager/index/index
+ERR: 非法操作:index
+
+[ 2017-05-17T13:40:27+08:00 ] ::1 /shoptp/index.php/Admin/idnex/index
+ERR: 无法加载控制器:Idnex
+
+[ 2017-05-17T13:43:53+08:00 ] ::1 /shoptp/index.php/Admin/idnex/index
+ERR: 无法加载控制器:Idnex
+

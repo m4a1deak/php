@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var tit = document.getElementsByTagName("title")[0];
+	console.log(tit);
+	function xx(){
+		tit.innerHTML = "123";
+		setTimeout("zz()",500);
+	}
+	function zz(){
+		tit.innerHTML="456"
+	}
+	setInterval("xx()",1000);
+	
+</script>
+</html>

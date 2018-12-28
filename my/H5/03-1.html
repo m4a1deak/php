@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标跟随</title>
+</head>
+<body>
+<div id="one" style="width: 100px;height: 100px;background: red;position:absolute">
+</div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    /*var one = document.getElementById('one');
+    one.onmousedown=function(){
+        document.onmousemove=function(e){
+            one.style.left=e.clientX+'px';
+            one.style.top=e.clientY+'px';
+        }
+    }*/
+    $('#one').mousedown(function(){
+        $(document).mousemove(function(e){
+            $('#one').css('left',e.clientX+'px');
+            $('#one').css('top',e.clientY+'px');
+        })
+    });
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>jQuery操作布尔型的属性</h1>
+<input type="button" value="全选" onclick="quan()" />
+<input type="button" value="全不选" onclick="bu()" />
+<p>选择1:<input type="checkbox" /></p>
+<p>选择1:<input type="checkbox" /></p>
+<p>选择1:<input type="checkbox" /></p>
+<p>选择1:<input type="checkbox" /></p>
+<p>选择1:<input type="checkbox" /></p>
+</body>
+<script src="jquery.js"></script>
+<script>
+    var che =$('input:checkbox').length;
+    //console.log(leng);
+    function quan(){
+        $('input:checkbox').prop('checked',true);
+    }
+    function bu(){
+        $('input:checkbox').prop('checked',false);
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<?php
+define("APPID","wx8c077eecf9a338e9");
+define("APPSECRET","22e21343c7a4719e6a7071f9eb4a067b");
+define("TOKEN","weixin111");
+require('./wechat.inc.php');
+$wechat = new WeChat(APPID,APPSECRET,TOKEN);
+$menu = '{
+     "button":[
+     {
+          "type":"click",
+          "name":"新闻",
+          "key":"news"
+      },
+      {
+           "name":"菜单",
+           "sub_button":[
+           {
+               "type":"view",
+               "name":"百度",
+               "url":"http://www.baidu.com"
+            },
+            {
+               "type":"click",
+               "name":"搜狗",
+               "key":"V1001_GOOD"
+            }]
+       }]
+ }';
+$wechat->_createMenu($menu);

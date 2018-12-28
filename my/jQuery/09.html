@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <p>a</p>
+    <p>b</p>
+</div>
+<div>
+    <p>c</p>
+    <p>d</p>
+</div>
+<ul>
+    <li><a href="">导航</a></li>
+    <li><span>s</span><a href="">导航</a></li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    //div下最后一个p
+    $('div p:last-of-type').css('background','red');
+    //匹配li独生子a
+    $('li a:only-child').css('background','black');
+</script>
+</html>

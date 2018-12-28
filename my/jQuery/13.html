@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="删除" onclick="shan()">
+<input type="button" value="删除2" onclick="shan2()">
+<input type="button" value="添加" onclick="tian()">
+<input type="button" value="前边添加" onclick="qian()">
+<input type="button" value="后边添加" onclick="hou()">
+
+<ul>
+    <li>导航1</li>
+    <li>导航2</li>
+    <li>导航3</li>
+    <li>导航4</li>
+</ul>
+</body>
+<script src="jquery.js"></script>
+<script>
+    function shan(){
+        //从dom中删除 不会保留其位置
+        $('li:first').remove();
+    }
+    function shan2(){
+        //只是拿掉其子节点 保留其在dom中的位置
+        $('li:first').empty();
+    }
+    function tian(){
+       //$('<li>导航5</li>').appendTo($('ul'));
+        $('ul').append('<li>导航5</li>');
+    }
+    function qian(){
+        $('ul').before($('<ol><li>哈哈</li></ol>'));
+    }
+    function hou(){
+        $('ul').after($('<ol><li>哈哈</li></ol>'));
+    }
+</script>
+</html>

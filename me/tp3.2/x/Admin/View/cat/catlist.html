@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/a.css">
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <td>
+                栏目名称:
+            </td>
+            <td>
+                创建时间
+            </td>
+            <td>
+                操作
+            </td>
+        </tr>
+        <foreach name="arr" item="v">
+        <tr>
+            <td>
+                {$v['cat_name']}
+            </td>
+            <td>
+                {$v['time']|date="y-m-d h:i:s",###}
+            </td>
+            <td>
+                <a href="{:U('admin/cat/catedit',array('cat_id'=>$v[cat_id]))}">修改</a>
+                <a href="{:U('admin/cat/catdel',array('cat_id'=>$v[cat_id]))}">删除</a>
+            </td>
+        </tr>
+        </foreach>
+    </table>
+    <p><a href="{:U('admin/cat/catadd')}">添加栏目</a>&nbsp;|&nbsp;<a href="{:U('admin/cat/catlist')}">栏目列表</a></p>
+
+
+
+
+
+</div>
+</body>
+</html>

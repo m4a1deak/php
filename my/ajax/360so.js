@@ -1,0 +1,4 @@
+/**
+ * Created by guanhui on 2017/4/25.
+ */
+abc({"query":"ok","ext":"eci=dd0c2ef48927de42&nlpv=suggest_3.2.2","result":[{"word":"ok广场舞","resrc":"ori","source":""},{"word":"okooo澳客网","resrc":"ori","source":""},{"word":"oksana d'harcourt","resrc":"ori","source":""},{"word":"ok论坛","resrc":"ori","source":""},{"word":"okooo","resrc":"ori","source":""},{"word":"okooo澳客网彩票","resrc":"ori","source":""},{"word":"ok168","resrc":"ori","source":""},{"word":"okbuy","resrc":"ori","source":""},{"word":"oki打印机官网","resrc":"ori","source":""},{"word":"oksana d'harcoure","resrc":"ori","source":""}],"version":"3.2.2"});

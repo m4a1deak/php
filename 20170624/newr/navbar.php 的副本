@@ -1,0 +1,34 @@
+<?php
+echo '<div class="container"><img src="./img/top.jpg" alt="" class="hidden-phone carousel-inner img-responsive img-rounded" /></div>
+<div class="navbar container">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand visible-phone" href="./">乐游城会员管理系统</a>
+      <div class="nav-collapse">
+
+        <ul class="nav pull-left">
+           <li><a href="./" >首页</a></li>
+          <li><a href="test.php?yid=xitonggonggao.php">系统公告</a>
+				<ul>  <li><a href="test.php?yid=xiexin.php">站内通信</a></li>
+				<li><a href="test.php?yid=Orders.php">收货记录</a></li>
+        		  <li><a href="test.php?yid=wentijieda.php">问题解答</a></li> 
+				</ul>
+		
+		</li>
+		
+          <li><a href="test.php?yid=xiexin.php">站内通信</a></li>
+		<li><a href="test.php?yid=Orders.php">收货记录</a></li>
+          <li><a href="test.php?yid=wentijieda.php">问题解答</a></li>
+          <li><a href="test.php?yid=youxiguize.php">制度规则</a></li>
+          <li><a href="test.php?yid=kaitongxiaji.php">审核状况</a></li>
+          <li><a href="test.php?yid=tuijianhuiyuanguanli.php">推荐会员管理</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="../index.php"><i class="icon-off"></i>安全退出</a></li>
+        </ul>
+      </div>
+      <!-- /nav-collapse -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /navbar-inner -->
+</div>';

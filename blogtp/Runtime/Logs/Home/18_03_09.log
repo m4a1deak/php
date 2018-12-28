@@ -1,0 +1,55 @@
+[ 2018-03-09T16:02:44+08:00 ] ::1 /blogtp/
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:02:54+08:00 ] ::1 /blogtp/index.php/home/articel/index/art_id/28.html
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:13+08:00 ] ::1 /blogtp/index.php/home/articel/artlist.html
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:14+08:00 ] ::1 /blogtp/index.php/home/articel/ziyuan.html
+ERR: 非法操作:ziyuan
+
+[ 2018-03-09T16:03:16+08:00 ] ::1 /blogtp/index.php/home/articel/me.html
+ERR: 非法操作:me
+
+[ 2018-03-09T16:03:26+08:00 ] ::1 /blogtp/index.php/home/index/index.html
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:27+08:00 ] ::1 /blogtp/index.php/home/articel/index/art_id/28.html
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:28+08:00 ] ::1 /blogtp/index.php/home/index/index.html
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:30+08:00 ] ::1 /blogtp/index.php/home/articel/index/art_id/27.html
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:32+08:00 ] ::1 /blogtp/index.php/home/index/index.html
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:03:33+08:00 ] ::1 /blogtp/index.php/home/index/me.html
+ERR: 非法操作:me
+
+[ 2018-03-09T16:04:13+08:00 ] ::1 /blogtp/index.php/home/Articel/artlist
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:04:15+08:00 ] ::1 /blogtp/index.php/home/articel/index/art_id/29.html
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:04:18+08:00 ] ::1 /blogtp/index.php/home/index/index.html
+NOTIC: D方法实例化没找到模型类admin\Model\CatModel
+NOTIC: D方法实例化没找到模型类admin\Model\ArticelModel
+
+[ 2018-03-09T16:04:37+08:00 ] ::1 /blogtp/index.php/home/index/me.html
+ERR: 非法操作:me
+
+[ 2018-03-09T16:04:41+08:00 ] ::1 /blogtp/index.php/home/index/ziyuan.html
+ERR: 非法操作:ziyuan
+

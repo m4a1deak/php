@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+#user-nav > ul > li > a {
+	font-size: 12px;
+}
+.inlblo{display:inline-block}
+
+.height01{height:130px;}
+.borbotom{border-bottom:1px solid #ccc;}
+.myadmin{padding-top:20px;padding-bottom:20px;overflow:hidden}
+.myadmin img{float:left;width:120px;height:120px;margin:0 20px;display:block;overflow:hidden;}
+.admintxt h2{font-size:14px;}
+
+.anoun h5 a{float: right;}
+.news li{line-height: 28px;height:28px;overflow: hidden;}
+.news li span{float: right;width:80px;text-align:left}
+
+#breadcrumb a{font-size:12px}
+.quick-actions li{*dispaly:inline;*zoom:1;*width: 14%;}
+.recent-posts li, .recent-comments li, .article-post li, .recent-users li {padding: 10px 10px 7px;}
+.activity-list li a {padding: 11px 10px 12px;}
+.table th{font-size:12px}
+.table td{text-align: center;}
+
+.form-horizontal .controls {*padding-left:0;text-align:left}
+.rbtn-input {float:left;*margin:-1px 0; margin-left:10px;}
+.rbtn-font {float:left;margin-top:1px; margin-left:3px;}
+.pt01{padding-top:8px;}
+.pb01{padding-bottom:8px;}
+.pl01{padding-left:8px;}
+.ml01{margin-left:15px;}
+
+.geneal{border-top:1px solid #ccc;border-right:1px solid #ccc}
+.geneal td,.geneal th{border-left:1px solid #ccc;border-bottom:1px solid #ccc;padding:0 10px;text-align:center}
+.geneal th{background:#efefef;color:#4fa9d8}
+
+.ml01{margin-left:159px;}
+.ml02{margin-left:15px;}
+
+ul.product{margin:0}
+/*ul.product li {float: left;margin-right:20px; margin-left:5px; display: inline;width: 204px;margin-top: 20px;}*/
+ul.product li {float: left;margin-right:20px; margin-left:5px; display: inline;width: 204px;margin-top: 10px;}
+ul.product li img {width: 200px;height: 150px;padding: 1px;border: 1px #eee solid;}
+ul.product li p{width:100%;color: #484848;line-height:28px}
+.product button{float:right;border-radius:5px;font-size:14px; text-shadow: none;}
+
+.txt_img p{margin:0;text-align:left}
+.color01{color:#000}
+.txt_img p span{color:#910808;font-size:16px;font-weight:bold}
+
+.detail_showimg img{border:1px solid #ccc;padding:1px;}
+.detail_showimg{padding:20px;}
+.detail_showimg p{padding:3px 0;line-height:28px;text-indent:2em}
+.detail_showimg h3 {color: #333;font-size: 14px;line-height: 30px;text-align: center;margin:0}
+.detail_showimg h4 { color: #666666; font-size: 12px; line-height:18px;text-align: center;border-bottom:1px dashed #ddd;font-weight:normal;margin:0}

@@ -1,0 +1,95 @@
+-----------------------------
+2017/06/06 20:52:20
+select * from cat
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:20
+select count(*) from art where 1
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:20
+select cat.cat_id,art_id,catname,thumb,title,content,pubtime,comm from art left join cat on art.cat_id=cat.cat_id where 1 order by art.art_id desc limit 0,5
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:30
+select count(*) from art where art_id='71'
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:30
+select * from cat
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:30
+select art_id,catname,pic,big,title,content,pubtime,comm from art left join cat on art.cat_id=cat.cat_id where art.art_id='71'
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:30
+select count(*) from comment
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:52:30
+select * from comment where art_id='71' order by comment_id desc limit 0,3
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select count(*) from art where art_id='71'
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select * from cat
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select art_id,catname,pic,big,title,content,pubtime,comm from art left join cat on art.cat_id=cat.cat_id where art.art_id='71'
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select count(*) from comment
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select * from comment where art_id='71' order by comment_id desc limit 0,3
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select * from cat
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select count(*) from art where 1
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:04
+select cat.cat_id,art_id,catname,thumb,title,content,pubtime,comm from art left join cat on art.cat_id=cat.cat_id where 1 order by art.art_id desc limit 0,5
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:13
+select * from cat
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:13
+select count(*) from art where 1
+----------------------------------------
+
+-----------------------------
+2017/06/06 20:54:13
+select cat.cat_id,art_id,catname,thumb,title,content,pubtime,comm from art left join cat on art.cat_id=cat.cat_id where 1 order by art.art_id desc limit 0,5
+----------------------------------------
+
